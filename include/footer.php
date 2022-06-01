@@ -1,9 +1,9 @@
-<div class="btn-gear d-lg-block d-none">
+<!-- <div class="btn-gear d-lg-block d-none">
     <div class="btn-gear_inner">
         <img class="icon-gear" src="./public/img/icon_gear.svg" alt="">
         <img class="icon-cross" src="./public/img/icon_cross.svg" alt="">
     </div>
-</div>
+</div> -->
 
 <footer class="footer">
     <div class="container position-relative">

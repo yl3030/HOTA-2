@@ -112,6 +112,10 @@
         }
         &_text {
             position: relative;
+            margin-left: 15px;
+            &:first-child {
+                margin-left: 0;
+            }
             &::before {
                 position: absolute;
                 content: "";
@@ -145,6 +149,9 @@
                 &::after {
                     bottom: 15px;
                 }
+                .header_nav_second {
+                    display: block;
+                }
             }
         }
     }
@@ -153,7 +160,6 @@
         position: fixed;
         height: calc(100vh - 80px);
         top: 80px;
-        left: 100vw;
         background-color: #fff;
         transition: $transition-main;
         z-index: 20;

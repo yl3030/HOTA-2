@@ -1,9 +1,9 @@
-$(".header_nav_text").mouseover(function(){
-    $(this).find(".header_nav_second").slideDown(500);
-})
-$(".header_nav_text").mouseleave(function(){
-    $(this).find(".header_nav_second").slideUp(500);
-})
+// $(".header_nav_text").mouseover(function(){
+//     $(this).find(".header_nav_second").slideDown(500);
+// })
+// $(".header_nav_text").mouseleave(function(){
+//     $(this).find(".header_nav_second").slideUp(500);
+// })
 
 $(".header_nav_icon").click(function(){
     $(this).find(".header_nav_second").slideToggle(500);

@@ -196,7 +196,7 @@
     </div>
 </header>
 
-<nav class="header_nav-m d-lg-none d-block">
+<nav class="header_nav-m">
     <ul class="container header_nav-m_top">
         <li class="header_nav-m_item">
             <div class="header_nav-m_title d-flex align-items-center justify-content-between">

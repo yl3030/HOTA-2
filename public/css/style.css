@@ -29,6 +29,7 @@ input, button {
 
 main {
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .btn-more {
@@ -228,6 +229,11 @@ main {
 
 .header_nav_text {
   position: relative;
+  margin-left: 15px;
+}
+
+.header_nav_text:first-child {
+  margin-left: 0;
 }
 
 .header_nav_text::before {
@@ -270,12 +276,15 @@ main {
   bottom: 15px;
 }
 
+.header_nav_text:hover .header_nav_second {
+  display: block;
+}
+
 .header_nav-m {
   width: 100vw;
   position: fixed;
   height: calc(100vh - 80px);
   top: 80px;
-  left: 100vw;
   background-color: #fff;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
@@ -857,7 +866,7 @@ main {
   position: relative;
   padding-bottom: 66.67%;
   background-color: #EFEFEE;
-  background-image: url(/public/img/intro-homepic.png);
+  background-image: url(../public/img/intro-homepic.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -976,7 +985,7 @@ main {
 }
 
 .link_text {
-  padding: 20px 40px;
+  padding: 25px 80px;
   background-color: #fff;
 }
 
@@ -986,11 +995,14 @@ main {
   margin: 0 0 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 2.5rem;
 }
 
 .link_text p {
   line-height: 1.8;
   margin: 0;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .product {
@@ -1125,7 +1137,7 @@ main {
 
 .count {
   position: relative;
-  background-image: url(/public/img/data-bg.png);
+  background-image: url(../public/img/data-bg.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1197,7 +1209,7 @@ main {
 
 .map {
   padding: 100px 0;
-  background-image: url(/public/img/map-bg.png);
+  background-image: url(../public/img/map-bg.png);
   background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1249,7 +1261,7 @@ main {
   padding: 40px;
   background-color: #4EA16E;
   color: #fff;
-  background-image: url(/public/img/contact-bg.png);
+  background-image: url(../public/img/contact-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1276,7 +1288,7 @@ main {
 .contact_btn {
   color: #007934;
   border-radius: 100px;
-  padding: 18px 80px;
+  padding: 20px 60px;
   background-color: #fff;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1293,7 +1305,8 @@ main {
 
 .contact_btn span {
   margin-right: 15px;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .contact_btn svg {
@@ -1330,6 +1343,15 @@ main {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .link_text {
+    padding: 25px 60px;
+  }
+  .link_text h3 {
+    font-size: 1.8rem;
+  }
+  .link_text p {
+    font-size: 15px;
   }
 }
 
@@ -1410,8 +1432,20 @@ main {
   .product_text_content .btn-more img.hover {
     opacity: 1;
   }
+  .product_text .btn-more:hover {
+    background-color: #485563;
+  }
+  .product_text .btn-more:hover span {
+    color: #fff;
+  }
+  .product_text .btn-more:hover img.normal {
+    opacity: 0;
+  }
+  .product_text .btn-more:hover img.hover {
+    opacity: 1;
+  }
   .count {
-    background-image: url(/public/img/data-bg-m.png);
+    background-image: url(../public/img/data-bg-m.png);
     padding: 8vw 20px;
   }
   .count_content {
@@ -1444,11 +1478,20 @@ main {
   .contact {
     width: 100%;
     text-align: center;
-    background-image: url(/public/img/contact-bg-m.png);
+    background-image: url(../public/img/contact-bg-m.png);
   }
   .contact_btn {
     margin-left: 0;
     margin-top: 40px;
+  }
+  .link_text {
+    padding: 25px 35px;
+  }
+  .link_text h3 {
+    font-size: 1.8rem;
+  }
+  .link_text p {
+    font-size: 15px;
   }
 }
 
@@ -1470,7 +1513,7 @@ main {
   }
   .intro {
     padding-bottom: 162vw;
-    background-image: url(/public/img/intro-homepic-m.png);
+    background-image: url(../public/img/intro-homepic-m.png);
   }
   .intro_text {
     width: 290px;
@@ -1542,12 +1585,6 @@ main {
   .banner_text .btn-more {
     margin: 0 auto;
   }
-  .link_text {
-    padding: 20px;
-  }
-  .link_text h3 {
-    font-size: calc(1.2rem + 0.6vw);
-  }
   .product_item {
     padding-bottom: 20px;
   }
@@ -1601,11 +1638,13 @@ main {
     padding: 40px 20px;
   }
   .contact_btn {
-    padding: 18px 40px;
-    width: 100%;
+    padding: 15px 50px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contact_btn span {
+    font-size: 20px;
   }
 }
 

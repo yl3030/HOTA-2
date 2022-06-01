@@ -80,7 +80,7 @@
     position: relative;
     padding-bottom: 66.67%;
     background-color: #EFEFEE;
-    background-image: url(/public/img/intro-homepic.png);
+    background-image: url(../public/img/intro-homepic.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -169,17 +169,20 @@
         }
     }
     &_text {
-        padding: 20px 40px;
+        padding: 25px 80px;
         background-color: #fff;
         h3 {
             color: $third-color;
             font-weight: 400;
             margin: 0 0 10px;
             transition: 0.3s;
+            font-size: 2.5rem;
         }
         p {
             line-height: 1.8;
             margin: 0;
+            font-size: 20px;
+            font-weight: 300;
         }
     }
 }
@@ -205,13 +208,13 @@
         background-repeat: no-repeat;
         &.product {
             // &_system {
-            //     background-image: url(/public/img/car-pic.png);
+            //     background-image: url(../public/img/car-pic.png);
             // }
             // &_machine {
-            //     background-image: url(/public/img/machine-pic.png);
+            //     background-image: url(../public/img/machine-pic.png);
             // }
             // &_medical {
-            //     background-image: url(/public/img/medical-pic.png);
+            //     background-image: url(../public/img/medical-pic.png);
             // }
         }
         &:nth-child(odd) {
@@ -313,7 +316,7 @@
 
 .count {
     position: relative;
-    background-image: url(/public/img/data-bg.png);
+    background-image: url(../public/img/data-bg.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -375,7 +378,7 @@
 
 .map {
     padding: 100px 0;
-    background-image: url(/public/img/map-bg.png);
+    background-image: url(../public/img/map-bg.png);
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -419,7 +422,7 @@
     padding: 40px;
     background-color: #4EA16E;
     color: #fff;
-    background-image: url(/public/img/contact-bg.png);
+    background-image: url(../public/img/contact-bg.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -439,7 +442,7 @@
     &_btn {
         color: $main-color;
         border-radius: 100px;
-        padding: 18px 80px;
+        padding: 20px 60px;
         background-color: #fff;
         width: fit-content;
         height: fit-content;
@@ -448,7 +451,8 @@
         transition: $transition-main;
         span {
             margin-right: 15px;
-            font-size: 20px;
+            font-size: 22px;
+            font-weight: 300;
         }
         svg {
             width: 35px;
@@ -492,6 +496,17 @@
         &_content {
             padding-right: 5%;
             justify-content: flex-end;
+        }
+    }
+    .link {
+        &_text {
+            padding: 25px 60px;
+            h3 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -587,10 +602,26 @@
                     }
                 }
             }
+            .btn-more {
+                &:hover {
+                    background-color: $third-color;
+                    span {
+                        color: #fff;
+                    }
+                    img {
+                        &.normal {
+                            opacity: 0;
+                        }
+                        &.hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
         }
     }
     .count {
-        background-image: url(/public/img/data-bg-m.png);
+        background-image: url(../public/img/data-bg-m.png);
         padding: 8vw 20px;
         &_content {
             padding-right: 0;
@@ -625,10 +656,21 @@
     .contact {
         width: 100%;
         text-align: center;
-        background-image: url(/public/img/contact-bg-m.png);
+        background-image: url(../public/img/contact-bg-m.png);
         &_btn {
             margin-left: 0;
             margin-top: 40px;
+        }
+    }
+    .link {
+        &_text {
+            padding: 25px 35px;
+            h3 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -656,7 +698,7 @@
     .intro {
         padding-bottom: 162vw;
         // padding-top: 40px;
-        background-image: url(/public/img/intro-homepic-m.png);
+        background-image: url(../public/img/intro-homepic-m.png);
         &_text {
             // position: static;
             width: 290px;
@@ -738,10 +780,10 @@
     }
     .link {
         &_text {
-            padding: 20px;
-            h3 {
-                font-size: calc(1.2rem + 0.6vw);
-            }
+            // padding: 20px;
+            // h3 {
+            //     font-size: calc(1.2rem + 0.6vw);
+            // }
         }
     }
     .product {
@@ -806,9 +848,12 @@
     .contact {
         padding: 40px 20px;
         &_btn {
-            padding: 18px 40px;
-            width: 100%;
+            padding: 15px 50px;
+            // width: 100%;
             justify-content: center;
+            span {
+                font-size: 20px;
+            }
         }
     }
 }

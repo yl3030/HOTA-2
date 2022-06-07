@@ -44,18 +44,19 @@ main {
 .btn {
     &-more {
         display: block;
-        padding: 10px 40px;
+        padding: 12px 57px;
         border: 1px solid $third-color;
         color: $third-color;
         width: fit-content;
         position: relative;
         transition: $transition-main;
         img, svg {
-            width: 8px;
+            width: 7px;
             position: absolute;
             top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
+            right: 30px;
+            transform: translateY(-4px);
+            // transform: translateY(-50%);
             transition: $transition-main;
         }
         img {
@@ -65,6 +66,9 @@ main {
             &.hover {
                 opacity: 0;
             }
+        }
+        span {
+            font-size: 14px;
         }
         &:hover {
             background-color: #fff;

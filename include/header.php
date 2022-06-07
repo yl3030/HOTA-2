@@ -128,7 +128,7 @@
                     </div>
                 </li>
                 <li class="header_nav_icon ms-2">
-                    <a><img src="./public/img/icon_user.svg" alt=""></a>
+                    <a class="header_nav_icon_inner"><img src="./public/img/icon_user.svg" alt=""></a>
                     <div class="header_nav_second container">
                         <div class="header_nav_second_content d-flex justify-content-center">
                             <ul>
@@ -145,7 +145,7 @@
                     </div>
                 </li>
                 <li class="header_nav_icon">
-                    <a><img class="icon-search" src="./public/img/icon_search.svg" alt=""></a>
+                    <a class="header_nav_icon_inner"><img class="icon-search" src="./public/img/icon_search.svg" alt=""></a>
                     <div class="header_nav_second container">
                         <div class="header_nav_second_content d-flex justify-content-center">
                             <form class="header_search d-flex align-items-center" action="">

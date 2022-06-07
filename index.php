@@ -168,7 +168,7 @@
                         <p class="count_num m-0" data-ct-number="98" data-ct-duration="300">0</p>
                         <span class="count_unit">%</span>
                     </div>
-                    <p class="count_intro">齒輪製造大廠</p>
+                    <p class="count_intro">以上</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">每年生產超過</h3>
@@ -186,6 +186,7 @@
             <div class="map_pic">
                 <div class="map_pic_inner">
                     <img data-aos="fade-up" data-aos-duration="1000" src="./public/img/map.svg" alt="">
+                    <img class="map_pic_shadow" src="./public/img/map-shadow.png" alt="">
                     <img src="./public/img/map-pin.svg" alt="">
                 </div>
             </div>

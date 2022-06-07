@@ -10,6 +10,19 @@
             <div class="swiper-container banner">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
+                      <img class="d-sm-block d-none" src="./public/img/banner-2.png" alt="">
+                      <img class="d-sm-none d-block" src="./public/img/banner-2-m.png" alt="">
+                      <div class="banner_text">
+                        <div class="container">
+                          <h2>核心技術推進宇宙<br>航太科技迎勢啟航</h2>
+                          <a class="btn-more" href="">
+                              <span>了解更多</span>
+                              <img src="./public/img/icon_arrow-more.svg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
                       <img class="d-sm-block d-none" src="./public/img/banner-1.png" alt="">
                       <img class="d-sm-none d-block" src="./public/img/banner-1-m.png" alt="">
                       <div class="banner_text">
@@ -22,19 +35,6 @@
                           </div>
                       </div>
                   </div>
-                  <div class="swiper-slide">
-                      <img class="d-sm-block d-none" src="./public/img/banner-2.png" alt="">
-                      <img class="d-sm-none d-block" src="./public/img/banner-2-m.png" alt="">
-                      <div class="banner_text">
-                        <div class="container">
-                          <h2>核心技術推進宇宙<br>航太科技迎勢啟航</h2>
-                          <a class="btn-more" href="">
-                              <span>了解更多</span>
-                              <img src="./public/img/icon_arrow-more.svg" alt="">
-                          </a>
-                        </div>
-                    </div>
-                    </div>
                 </div>     
                 <div class="swiper-pagination"></div>
             </div>
@@ -154,25 +154,25 @@
             <div class="d-flex flex-wrap count_content">
                 <div class="count_item">
                     <h3 class="count_title">臺灣TOP</h3>
-                    <p class="count_num" data-ct-number="1" data-ct-duration="300">0</p>
+                    <p class="count_num" data-ct-number="1" data-ct-duration="600">0</p>
                     <p class="count_intro">齒輪製造大廠</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">卓越經驗累積</h3>
-                    <p class="count_num" data-ct-number="55" data-ct-duration="300">0</p>
+                    <p class="count_num" data-ct-number="55" data-ct-duration="600">0</p>
                     <p class="count_intro">年以上</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">客戶滿意度</h3>
                     <div class="d-flex align-items-end justify-content-center">
-                        <p class="count_num m-0" data-ct-number="98" data-ct-duration="300">0</p>
+                        <p class="count_num m-0" data-ct-number="98" data-ct-duration="600">0</p>
                         <span class="count_unit">%</span>
                     </div>
                     <p class="count_intro">以上</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">每年生產超過</h3>
-                    <p class="count_num" data-ct-number="2000" data-ct-duration="300">0</p>
+                    <p class="count_num" data-ct-number="2000" data-ct-duration="600">0</p>
                     <p class="count_intro">萬個部件</p>
                 </div>
             </div>

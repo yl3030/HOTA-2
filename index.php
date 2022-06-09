@@ -159,20 +159,20 @@
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">卓越經驗累積</h3>
-                    <p class="count_num" data-ct-number="55" data-ct-duration="600">0</p>
+                    <p class="count_num" data-ct-number="55" data-ct-duration="1500">0</p>
                     <p class="count_intro">年以上</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">客戶滿意度</h3>
                     <div class="d-flex align-items-end justify-content-center">
-                        <p class="count_num m-0" data-ct-number="98" data-ct-duration="600">0</p>
+                        <p class="count_num m-0" data-ct-number="98" data-ct-duration="1500">0</p>
                         <span class="count_unit">%</span>
                     </div>
                     <p class="count_intro">以上</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">每年生產超過</h3>
-                    <p class="count_num" data-ct-number="2000" data-ct-duration="600">0</p>
+                    <p class="count_num" data-ct-number="2000" data-ct-duration="1500">0</p>
                     <p class="count_intro">萬個部件</p>
                 </div>
             </div>
@@ -243,7 +243,7 @@
                         },
                         {
                             duration: parseInt(dur),
-                            easing: "linear",
+                            easing: "swing",
                             step: function(now) {
                                 $(this).text(Math.floor(now));
                             }

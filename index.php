@@ -154,25 +154,25 @@
             <div class="d-flex flex-wrap count_content">
                 <div class="count_item">
                     <h3 class="count_title">臺灣TOP</h3>
-                    <p class="count_num" data-ct-number="1" data-ct-duration="600">0</p>
+                    <p class="count_num">1</p>
                     <p class="count_intro">齒輪製造大廠</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">卓越經驗累積</h3>
-                    <p class="count_num" data-ct-number="55" data-ct-duration="1500">0</p>
+                    <p class="count_num" id="num1">0</p>
                     <p class="count_intro">年以上</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">客戶滿意度</h3>
                     <div class="d-flex align-items-end justify-content-center">
-                        <p class="count_num m-0" data-ct-number="98" data-ct-duration="1500">0</p>
+                        <p class="count_num m-0" id="num2">0</p>
                         <span class="count_unit">%</span>
                     </div>
                     <p class="count_intro">以上</p>
                 </div>
                 <div class="count_item">
                     <h3 class="count_title">每年生產超過</h3>
-                    <p class="count_num" data-ct-number="2000" data-ct-duration="1500">0</p>
+                    <p class="count_num" id="num3">0</p>
                     <p class="count_intro">萬個部件</p>
                 </div>
             </div>
@@ -210,9 +210,11 @@
         </div>
     </main>
     <?php include("./include/footer.php") ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <?php include("./include/script.php") ?>
     <script>
         AOS.init();
+
         var swiper = new Swiper(".banner", {
             slidesPerView: 1,
             loop: true,
@@ -227,30 +229,27 @@
             speed: 1000,
         })
 
-        // count
-        $(window).scroll(function() {
-            $(".count_num").each(function() {
-                let windowTop = $(window).scrollTop();
-                let offset = $(this).offset();
-                let top = offset.top;
-
-                if (top - windowTop < 1000) {
-                    let number = $(this).attr("data-ct-number");
-                    let dur = $(this).attr("data-ct-duration");
-                    $(this).animate(
-                        {
-                            countNum: number
-                        },
-                        {
-                            duration: parseInt(dur),
-                            easing: "swing",
-                            step: function(now) {
-                                $(this).text(Math.floor(now));
-                            }
-                        }
-                    );
-                }
-            });
+        var options1={
+            smartEasingAmount:50,
+        }
+        var options2={
+            smartEasingAmount:93,
+        }
+        var options3={
+            startVal: 1900,
+            smartEasingAmount:95,
+        }
+        new Waypoint({
+            element: document.querySelector(".count"),
+            handler: function () {
+                var numAnim1 = new countUp.CountUp('num1', 55,options1);
+                numAnim1.start();
+                var numAnim2 = new countUp.CountUp('num2', 98,options2);
+                numAnim2.start();
+                var numAnim3 = new countUp.CountUp('num3', 2000,options3);
+                numAnim3.start();
+            },
+            offset: '80%',
         });
     </script>
 </body>

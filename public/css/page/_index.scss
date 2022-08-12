@@ -239,7 +239,7 @@
                         top: 0;
                     }
                     .btn-more {
-                        opacity: 1;
+                        // opacity: 1;
                     }
                 }
             }
@@ -289,7 +289,7 @@
                 position: absolute;
                 top: calc(100% + 30px);
                 left: 0;
-                opacity: 0;
+                // opacity: 0;
                 transition: $transition-main;
                 span {
                     color: #fff;

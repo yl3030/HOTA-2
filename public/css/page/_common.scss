@@ -234,6 +234,13 @@ main {
     }
 }
 
+.modal-backdrop {
+    background-color: rgba(255,255,255,0.9);
+    &.show {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width:991px) {
     main {
         padding-top: 80px;

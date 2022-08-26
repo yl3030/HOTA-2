@@ -5,6 +5,8 @@
 //     countUp.start();
 // }
 
+AOS.init();
+
 $(".header_nav_icon_inner").click(function(){
     $(this).parents(".header_nav_icon").find(".header_nav_second").slideToggle(500);
     $(this).parents(".header_nav_icon").siblings(".header_nav_icon").find(".header_nav_second").slideUp(500);

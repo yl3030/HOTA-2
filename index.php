@@ -213,7 +213,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <?php include("./include/script.php") ?>
     <script>
-        AOS.init();
+        
 
         var swiper = new Swiper(".banner", {
             slidesPerView: 1,

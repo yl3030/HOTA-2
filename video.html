@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="./public/css/aos/aos.css">
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
+<style>
+    .modal-backdrop {
+        background-color: rgba(255,255,255,0.9);
+    }
+    .modal-backdrop.show {
+        opacity: 1;
+    }
+</style>
 <body>
     <header class="header d-lg-block d-none">
         <div class="container h-100 d-flex align-items-center justify-content-between">
@@ -585,45 +593,7 @@
     <script src="./public/js/common.js"></script>
 
     <script>
-        // youtube
-        var tag = document.createElement("script");
-
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName("script")[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        var done = false;
-        function onPlayerStateChange(event) {
-            if (event.data == YT.PlayerState.PLAYING && !done) {
-                setTimeout(stopVideo, 6000);
-                done = true;
-            }
-        }
-        function stopVideo() {
-            player.stopVideo();
-        }
-
-        var playerHanding,playerRolling;
-        function onYouTubeIframeAPIReady() {
-            playerHanding = new YT.Player("news_video", {
-                videoId: "SgUjftmFB4U",
-                events: {
-                    onReady: stopVideo,
-                },
-            });
-        }
-
-        function stop() {
-            playerHanding.stopVideo();
-        }
-
-        function onPlayer(event) {
-            event.target.playVideo();
-        }
-
-        $(".modal-backdrop").click(function(){
-            playerHanding.stopVideo();
-        })
+        
     </script>
     
 </body>

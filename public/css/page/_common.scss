@@ -6,6 +6,7 @@ $second-color:#37B04A;
 $third-color:#485563;
 $forth-color:#323E48;
 $fifth-color:#3B4854;
+$sixth-color:#97CA3F;
 $main-deep:#6D6D6D;
 $color-nav:#6A737B;
 $color-text:#231815;
@@ -143,6 +144,11 @@ main {
     }
 }
 
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+    color: #A6ACB1;
+}
+
 .tab {
     margin-bottom: 80px;
     display: flex;
@@ -186,6 +192,13 @@ main {
             top: 100%;
             transform: translateX(-50%);
         }
+    }
+    &-content {
+        text-align: center;
+        padding-bottom: 35px;
+        border-bottom: 1px solid $main-deep;
+        margin-bottom: 60px;
+        color: $color-text;
     }
 }
 
@@ -234,10 +247,48 @@ main {
     }
 }
 
-.modal-backdrop {
-    background-color: rgba(255,255,255,0.9);
-    &.show {
-        opacity: 1;
+.table-common {
+    width: 100%;
+    text-align: center;
+    color: $color-text;
+    font-size: 18px;
+    font-weight: 300;
+    td {
+        padding: 15px 40px;
+        border-bottom: 1px solid $main-deep;
+        border-right: 1px solid $main-deep;
+        &.table-common_title {
+            border-bottom: 0;
+        }
+        &:last-child {
+            border-right:0;
+        }
+    }
+    tr {
+        &:last-child {
+            td {
+                border-bottom:0;
+            }
+        }
+        &:nth-child(even) {
+            td {
+                background-color: #fff;
+            }
+        }
+    }
+    &_title {
+        background-color: #A6ACB1;
+        font-size: 32px;
+        font-weight: normal;
+        color: #fff;
+        padding: 15px;
+    }
+    &_name {
+        text-align: left;
+    }
+    &_secondTitle {
+        font-weight: 500;
+        border-bottom: 1px solid $main-color !important;
     }
 }
 
@@ -257,6 +308,12 @@ main {
     .title {
         &-page {
             margin-bottom: 70px;
+        }
+    }
+    .table-common {
+        font-size: 16px;
+        td {
+            padding: 13px 25px;
         }
     }
 }
@@ -279,9 +336,15 @@ main {
             margin: 0 10px;
         }
     }
-    .title-page {
-        margin-bottom: 60px;
-        font-size: 36px;
+    .title {
+        &-content {
+            padding-bottom: 18px;
+            margin-bottom: 30px;
+        }
+        &-page {
+            margin-bottom: 60px;
+            font-size: 36px;
+        }
     }
     .mb-footer {
         margin-bottom: 75px;
@@ -329,6 +392,11 @@ main {
             font-size: 13px;
         }
     } 
+    .table-common {
+        &_title {
+            font-size: 28px;
+        }
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -351,6 +419,12 @@ main {
                 margin-right: 5px;
                 padding: 13px 10px;
             }
+        }
+    }
+    .table-common {
+        font-size: 14px;
+        td {
+            padding: 13px 20px;
         }
     }
 }

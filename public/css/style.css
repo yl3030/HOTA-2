@@ -128,6 +128,11 @@ main {
   color: #007934;
 }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "|";
+  color: #A6ACB1;
+}
+
 .tab {
   margin-bottom: 80px;
   display: -webkit-box;
@@ -181,6 +186,14 @@ main {
   top: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.title-content {
+  text-align: center;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #6D6D6D;
+  margin-bottom: 60px;
+  color: #231815;
 }
 
 .mb-footer {
@@ -244,12 +257,51 @@ main {
   margin-left: 13px;
 }
 
-.modal-backdrop {
-  background-color: rgba(255, 255, 255, 0.9);
+.table-common {
+  width: 100%;
+  text-align: center;
+  color: #231815;
+  font-size: 18px;
+  font-weight: 300;
 }
 
-.modal-backdrop.show {
-  opacity: 1;
+.table-common td {
+  padding: 15px 40px;
+  border-bottom: 1px solid #6D6D6D;
+  border-right: 1px solid #6D6D6D;
+}
+
+.table-common td.table-common_title {
+  border-bottom: 0;
+}
+
+.table-common td:last-child {
+  border-right: 0;
+}
+
+.table-common tr:last-child td {
+  border-bottom: 0;
+}
+
+.table-common tr:nth-child(even) td {
+  background-color: #fff;
+}
+
+.table-common_title {
+  background-color: #A6ACB1;
+  font-size: 32px;
+  font-weight: normal;
+  color: #fff;
+  padding: 15px;
+}
+
+.table-common_name {
+  text-align: left;
+}
+
+.table-common_secondTitle {
+  font-weight: 500;
+  border-bottom: 1px solid #007934 !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -265,6 +317,12 @@ main {
   }
   .title-page {
     margin-bottom: 70px;
+  }
+  .table-common {
+    font-size: 16px;
+  }
+  .table-common td {
+    padding: 13px 25px;
   }
 }
 
@@ -285,6 +343,10 @@ main {
   .tab_link {
     padding: 15px 37px;
     margin: 0 10px;
+  }
+  .title-content {
+    padding-bottom: 18px;
+    margin-bottom: 30px;
   }
   .title-page {
     margin-bottom: 60px;
@@ -330,6 +392,9 @@ main {
   .breadcrumb a {
     font-size: 13px;
   }
+  .table-common_title {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -347,6 +412,12 @@ main {
     margin-left: 5px;
     margin-right: 5px;
     padding: 13px 10px;
+  }
+  .table-common {
+    font-size: 14px;
+  }
+  .table-common td {
+    padding: 13px 20px;
   }
 }
 
@@ -3619,14 +3690,14 @@ main {
           transform: scale(1.1);
 }
 
-.product-list_picTop, .product-list_picBottom {
+.product-list_picTop, .product-list_picBottom, .product-list_picTool {
   width: 100%;
   position: relative;
   display: block;
   overflow: hidden;
 }
 
-.product-list_picTop > img, .product-list_picBottom > img {
+.product-list_picTop > img, .product-list_picBottom > img, .product-list_picTool > img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3644,6 +3715,10 @@ main {
 
 .product-list_picBottom {
   padding-bottom: 66.25%;
+}
+
+.product-list_picTool {
+  padding-bottom: 118.2%;
 }
 
 .product-list h2 {
@@ -3679,15 +3754,1256 @@ main {
   width: 20%;
 }
 
+.product-componentList {
+  background-color: #f8f8f8;
+}
+
+.product-componentList_tab {
+  background-color: #fff;
+}
+
+.product-componentList_tab .nav-tabs {
+  border: 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.product-componentList_tab .nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.product-componentList_tab .nav-tabs .nav-link {
+  border: 0;
+  padding: 20px 0;
+  font-size: 18px;
+  margin-right: 50px;
+  color: #485563;
+  position: relative;
+  white-space: nowrap;
+}
+
+.product-componentList_tab .nav-tabs .nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #007934;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.product-componentList_tab .nav-tabs .nav-link.active, .product-componentList_tab .nav-tabs .nav-link:hover {
+  color: #007934;
+}
+
+.product-componentList_tab .nav-tabs .nav-link.active::after, .product-componentList_tab .nav-tabs .nav-link:hover::after {
+  opacity: 1;
+}
+
+.product-componentList_tab .nav-tabs .nav-link:last-child {
+  margin-right: 0;
+}
+
+.product-componentList .tab-content .row > div:first-child .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(2) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(3) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(4) .product-componentList_item {
+  margin-top: 0;
+}
+
+.product-componentList_tabContent {
+  padding-top: 100px;
+}
+
+.product-componentList_item {
+  margin-top: 53px;
+  cursor: pointer;
+}
+
+.product-componentList_item .text {
+  padding: 20px 0;
+  border-bottom: 1px solid #6D6D6D;
+}
+
+.product-componentList_item .text img {
+  width: 10px;
+  margin-right: 10px;
+}
+
+.product-componentList_item .text span {
+  color: #231815;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.product-componentList_item:hover .product-componentList_pic {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-componentList_pic {
+  width: 100%;
+  padding-bottom: 73.68%;
+  position: relative;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.product-componentList_pic img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.product-box {
+  background-image: url(../img/product-bg.png);
+  width: 100%;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-box_content {
+  position: relative;
+}
+
+.product-box_main {
+  margin: 0 auto;
+  display: block;
+}
+
+.product-box .title-page {
+  margin-bottom: 0;
+}
+
+.product-box.aerospace {
+  background-image: url(../img/aerospace-bg.png);
+}
+
+.electricCar_content {
+  padding-bottom: 5.82vw;
+  padding-top: 28.85vw;
+}
+
+.electricCar .component-1 {
+  top: 43.37vw;
+  left: 25.49vw;
+}
+
+.electricCar .component-1 .component_inner::after {
+  height: 18.2vw;
+}
+
+.electricCar .component-2 {
+  top: 45.35vw;
+  left: 29.11vw;
+}
+
+.electricCar .component-2 .component_inner::after {
+  height: 20.3vw;
+}
+
+.electricCar .component-3 {
+  top: 47.74vw;
+  left: 34vw;
+}
+
+.electricCar .component-3 .component_inner::after {
+  height: 22.6vw;
+}
+
+.electricCar .component-4 {
+  top: 31.94vw;
+  left: 61.3vw;
+}
+
+.electricCar .component-4 .component_inner::after {
+  height: 6.9vw;
+}
+
+.electricCar .component-5 {
+  top: 33.13vw;
+  left: 65.96vw;
+}
+
+.electricCar .component-5 .component_inner::after {
+  height: 8vw;
+}
+
+.electricCar .component-pic-1 {
+  width: 53vw;
+  top: 6.83vw;
+  left: 23.5vw;
+}
+
+.electricCar .component-pic-2 {
+  width: 52.08vw;
+  top: 7.1vw;
+  left: 23.96vw;
+}
+
+.electricCar_main {
+  width: 65%;
+}
+
+.fuelCar_content {
+  padding-bottom: 2.28vw;
+  padding-top: 22.6vw;
+}
+
+.fuelCar .component-1 {
+  top: 41.31vw;
+  left: 38.72vw;
+}
+
+.fuelCar .component-1 .component_inner::after {
+  height: 16.5vw;
+}
+
+.fuelCar .component-2 {
+  top: 38.88vw;
+  left: 45.76vw;
+}
+
+.fuelCar .component-2 .component_inner::after {
+  height: 14vw;
+}
+
+.fuelCar .component-3 {
+  top: 36.22vw;
+  left: 56.91vw;
+}
+
+.fuelCar .component-3 .component_inner::before {
+  height: 7.5vw;
+  bottom: 10%;
+  left: -2.5vw;
+  -webkit-transform: rotate(-57deg);
+          transform: rotate(-57deg);
+}
+
+.fuelCar .component-3 .component_inner::after {
+  height: 8.3vw;
+  bottom: calc(100% + 2.9vw);
+  left: -5.6vw;
+}
+
+.fuelCar .component-4 {
+  top: 32.25vw;
+  left: 63.99vw;
+}
+
+.fuelCar .component-4 .component_inner::before {
+  height: 17vw;
+  bottom: -140%;
+  left: -6vw;
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}
+
+.fuelCar .component-4 .component_inner::after {
+  height: 3.4vw;
+  bottom: calc(100% + 3.85vw);
+  left: -13.9vw;
+}
+
+.fuelCar .component-pic-1 {
+  width: 41.67vw;
+  top: 6.87vw;
+  left: 18.75vw;
+}
+
+.fuelCar .component-pic-2 {
+  width: 41.67vw;
+  top: 6.81vw;
+  left: 18.75vw;
+}
+
+.fuelCar .component-pic-3 {
+  width: 20.83vw;
+  top: 6.83vw;
+  left: 39.58vw;
+}
+
+.fuelCar .component-pic-4 {
+  width: 20.83vw;
+  top: 6.83vw;
+  left: 39.58vw;
+}
+
+.fuelCar_main {
+  width: 68%;
+}
+
+.aerospace_content {
+  padding-bottom: 5.68vw;
+  padding-top: 3.38vw;
+}
+
+.aerospace .component-1 {
+  top: 11.5vw;
+  left: 31.5vw;
+}
+
+.aerospace .component-1 .component_inner::before {
+  height: 6.4vw;
+  bottom: inherit;
+  top: 21vw;
+  left: 3.49vw;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.aerospace .component-1 .component_inner::after {
+  height: 19vw;
+  bottom: inherit;
+  top: calc(100% - 0.265vw);
+}
+
+.aerospace .component-2 {
+  top: 25.9vw;
+  left: 74.9vw;
+}
+
+.aerospace .component-2 .component_inner::before {
+  height: 17vw;
+  bottom: inherit;
+  top: -30%;
+  left: -3.5vw;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.aerospace .component-2 .component_inner::after {
+  width: 10vw;
+  height: 2px;
+  bottom: inherit;
+  top: 14vw;
+  left: inherit;
+  right: 7vw;
+}
+
+.aerospace .component-3 {
+  top: 55.21vw;
+  left: 74.9vw;
+}
+
+.aerospace .component-3 .component_inner::before {
+  height: 2px;
+  width: 30vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  bottom: inherit;
+  right: calc(100% - 0.265vw);
+}
+
+.aerospace .component-3 .component_inner::after {
+  height: 8vw;
+  bottom: calc(3.125vw / 2);
+  right: 32.7vw;
+  left: inherit;
+}
+
+.aerospace .component-pic-1 {
+  width: 20.83vw;
+  top: 30.74vw;
+  left: 35.26vw;
+}
+
+.aerospace .component-pic-2 {
+  width: 20.83vw;
+  top: 30.74vw;
+  left: 37vw;
+}
+
+.aerospace_main {
+  width: 63%;
+}
+
+.motorcycle_content {
+  padding-bottom: 3.18vw;
+  padding-top: 20.81vw;
+}
+
+.motorcycle_main {
+  width: 63%;
+}
+
+.motorcycle .component-1 {
+  top: 40.5vw;
+  left: 46.5vw;
+}
+
+.motorcycle .component-1 .component_inner::after {
+  height: 15.8vw;
+}
+
+.motorcycle .component-2 {
+  top: 42.81vw;
+  left: 50vw;
+}
+
+.motorcycle .component-2 .component_inner::before {
+  height: 8.3vw;
+  bottom: inherit;
+  top: -18.4vw;
+  left: -0.57vw;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.motorcycle .component-2 .component_inner::after {
+  height: 11vw;
+  right: 7vw;
+}
+
+.motorcycle .component-pic-1 {
+  width: 34.38vw;
+  top: 6.83vw;
+  left: 24.45vw;
+}
+
+.motorcycle .component-pic-2 {
+  width: 20.83vw;
+  top: 6.83vw;
+  left: 39.58vw;
+}
+
+.agricultural_content {
+  padding-bottom: 1.35vw;
+  padding-top: 17.38vw;
+}
+
+.agricultural_main {
+  width: 58%;
+}
+
+.agricultural .component-1 {
+  top: 42.12vw;
+  left: 60.69vw;
+}
+
+.agricultural .component-1 .component_inner::before {
+  height: 2px;
+  width: 17.5vw;
+  top: calc(3.125vw / 2);
+  left: 2.6vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.agricultural .component-1 .component_inner::after {
+  height: 18.8vw;
+  left: calc(17.5vw + 2.6vw);
+  bottom: calc((3.125vw / 2) - 2px);
+}
+
+.agricultural .component-pic-1 {
+  width: 20.83vw;
+  top: 6.87vw;
+  left: 69.18vw;
+}
+
+.component {
+  cursor: pointer;
+  position: absolute;
+}
+
+.component_inner {
+  position: relative;
+  width: 3.125vw;
+  height: 3.125vw;
+}
+
+.component_inner::before {
+  width: 2px;
+  background-color: #97CA3F;
+  position: absolute;
+  content: "";
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  opacity: 0;
+}
+
+.component_inner::after {
+  width: 2px;
+  background-color: #97CA3F;
+  bottom: calc(100% - 0.265vw);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  content: "";
+  opacity: 0;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.component_inner img {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.component_icon {
+  width: 2.6vw;
+  height: 2.6vw;
+}
+
+.component_icon_dash {
+  width: 3.125vw;
+  height: 3.125vw;
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
+}
+
+.component-pic {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.component-pic.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.component.active .component_inner::after, .component.active .component_inner::before {
+  opacity: 1;
+}
+
+.componentModal .modal-body {
+  padding: 10px;
+}
+
+.componentModal .modal-dialog {
+  max-width: 700px;
+  margin-top: 150px;
+}
+
+.componentModal .modal-content {
+  border: 0;
+  border-radius: 0;
+}
+
+.componentModal .modal-footer {
+  border: 0;
+}
+
+.componentModal .modal-footer {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px 16px 10px;
+}
+
+.componentModal .modal-footer p {
+  margin: 0;
+}
+
+.componentModal .modal-footer img {
+  width: 66px;
+  height: 22px;
+}
+
+.componentModal_pic {
+  width: 100%;
+  padding-bottom: 73.68%;
+  position: relative;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.componentModal_pic img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.componentModal_arrow {
+  font-size: 14px;
+  color: #231815;
+  background-color: #fff;
+  padding: 3px 5px;
+  position: absolute;
+  top: 10%;
+  cursor: pointer;
+}
+
+.componentModal_arrow.prev {
+  border-radius: 0 5px 5px 0;
+  left: 10px;
+}
+
+.componentModal_arrow.next {
+  border-radius: 5px 0 0 5px;
+  right: 10px;
+}
+
+.componentModal .modalClose {
+  cursor: pointer;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+            transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+            transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+.breadcrumb-medical {
+  background-color: #F8F8F8;
+}
+
+.breadcrumb-medical .breadcrumb {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.medical-tab {
+  border-bottom: 1px solid #6D6D6D;
+}
+
+.medical_slider {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.medical_slider_left {
+  width: 45%;
+  padding-right: 55px;
+}
+
+.medical_slider_left h1 {
+  font-weight: 500;
+  color: #231815;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  position: relative;
+}
+
+.medical_slider_left h1::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #007934;
+  left: 0;
+  top: 100%;
+}
+
+.medical_slider_left p {
+  font-size: 18px;
+}
+
+.medical_slider_right {
+  width: 55%;
+}
+
+.medicalSmall {
+  width: 50%;
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+.medicalSmall_pic {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  border: 1px solid #6D6D6D;
+}
+
+.medicalSmall_pic img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.medicalSmall .swiper-slide-thumb-active .medicalSmall_pic img {
+  opacity: 1;
+}
+
+.medicalBig_pic {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.medicalBig_pic img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+}
+
+.medicalBig .swiper-button-next, .medicalBig .swiper-button-prev {
+  background-image: url(../img/icon_arrow-more.svg);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.medicalBig .swiper-button-next::after, .medicalBig .swiper-button-prev::after {
+  display: none;
+}
+
+.medicalBig .swiper-button-prev {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.medical_content {
+  padding-top: 100px;
+  background-color: #F8F8F8;
+  padding-bottom: 130px;
+}
+
+.medical_content_pic {
+  width: 100%;
+  padding-bottom: 92%;
+  position: relative;
+}
+
+.medical_content_pic img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.medical_content h2 {
+  margin-bottom: 100px;
+}
+
+.medical_content p {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.medical_feature {
+  padding-top: 70px;
+  padding-bottom: 45px;
+  background-image: url(../img/medical-wheelchair-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.medical_feature ul li {
+  color: #231815;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.medical_feature img {
+  width: 85%;
+}
+
+.medical_feature_right {
+  padding-left: 10px;
+}
+
+.medical_special {
+  padding: 60px 0;
+}
+
+.medical_special img {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+}
+
+.medical_special h2 {
+  color: #231815;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 35px;
+  letter-spacing: 0.05em;
+}
+
+.medical_special p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #231815;
+  letter-spacing: 0.2em;
+  margin: 0;
+}
+
+.medical_special_text {
+  padding-right: 100px;
+}
+
+.medical_special.gray-bg {
+  background-color: #F8F8F8;
+}
+
+.medical_special.gray-bg .medical_special_text {
+  padding-left: 100px;
+  padding-right: 0;
+}
+
+.medical_spec {
+  background-color: #F8F8F8;
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+
+.medical_spec table {
+  margin-bottom: 20px;
+}
+
+.medical_spec ul li {
+  color: #231815;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.medical_video {
+  padding-top: 100px;
+  padding-bottom: 95px;
+}
+
+.medical_video_pic {
+  width: 100%;
+  padding-bottom: 62%;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.medical_video_pic img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.tool_pic {
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+
+.tool_pic img {
+  margin: 0 auto;
+  width: 56%;
+  display: block;
+}
+
+.tool_spec {
+  padding-top: 100px;
+  background-color: #F7F7F7;
+  padding-bottom: 85px;
+}
+
+.tool_spec .table-common tr:nth-child(even) td {
+  background-color: transparent;
+}
+
+.tool_spec .table-common tr:nth-child(odd) td:not(.table-common_title) {
+  background-color: #fff;
+}
+
+.tool_spec .table-common td {
+  white-space: nowrap;
+}
+
+.tool_spec .bg-tran {
+  background-color: transparent !important;
+}
+
+.tool_spec_inner {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 1399px) {
+  .tool_spec .container {
+    max-width: none;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .product-list_picTop {
     padding-bottom: 66.25%;
+  }
+  .product-componentList .tab-content .row > div:nth-child(4) .product-componentList_item {
+    margin-top: 53px;
+  }
+  .component_inner:after, .component_inner:before {
+    width: 1px;
+  }
+  .medical_slider_left {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-top: 50px;
+    padding-right: 0;
+  }
+  .medical_slider_right {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .medical_content p {
+    margin-bottom: 30px;
+  }
+  .medical_feature ul li {
+    font-size: 18px;
+  }
+  .medical_special h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .medical_special p {
+    font-size: 18px;
+  }
+  .medical_special_text {
+    padding-right: 50px;
+  }
+  .medical_special.gray-bg .medical_special_text {
+    padding-left: 50px;
+  }
+  .medical_spec ul li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-componentList .tab-content .row > div:nth-child(3) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(4) .product-componentList_item {
+    margin-top: 40px;
+  }
+  .product-componentList_item {
+    margin-top: 40px;
+  }
+  .product-componentList_item .text {
+    padding: 15px 0;
+  }
+  .product-componentList_tab .nav-tabs .nav-link {
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  .medical_content {
+    padding: 50px 0;
+  }
+  .medical_content h2 {
+    margin-bottom: 50px;
+  }
+  .medical_content p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .medical_feature ul {
+    padding-top: 50px;
+  }
+  .medical_feature img {
+    margin: 0 auto;
+    display: block;
+  }
+  .medical_feature_right {
+    padding-left: 0;
+  }
+  .medical_special_text {
+    padding: 50px 0 !important;
+  }
+  .medical_video_pic {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 575px) {
   .product-list h2 {
     font-size: 32px;
+  }
+  .product-componentList_tab .nav-tabs .nav-link {
+    padding: 17px 0;
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  .product-componentList_item .text {
+    padding: 13px 0;
+  }
+  .product-componentList_item .text span {
+    font-size: 16px;
+  }
+  .product-componentList_tabContent {
+    padding-top: 50px;
+  }
+  .product-box_main {
+    width: 95%;
+  }
+  .electricCar .component-1 {
+    top: 49vw;
+    left: 13vw;
+  }
+  .electricCar .component-1 .component_inner::after {
+    height: 23vw;
+  }
+  .electricCar .component-2 {
+    top: 52vw;
+    left: 19vw;
+  }
+  .electricCar .component-2 .component_inner::after {
+    height: 25.5vw;
+  }
+  .electricCar .component-3 {
+    top: 55vw;
+    left: 26vw;
+  }
+  .electricCar .component-3 .component_inner::after {
+    height: 29vw;
+  }
+  .electricCar .component-4 {
+    top: 31.94vw;
+    left: 65vw;
+  }
+  .electricCar .component-4 .component_inner::after {
+    height: 5.5vw;
+  }
+  .electricCar .component-5 {
+    top: 34vw;
+    left: 73vw;
+  }
+  .electricCar .component-pic-1 {
+    width: 78vw;
+    top: 0;
+    left: 11vw;
+  }
+  .electricCar .component-pic-2 {
+    width: 76vw;
+    top: 0;
+    left: 12vw;
+  }
+  .fuelCar .component-1 {
+    top: 47vw;
+    left: 34vw;
+  }
+  .fuelCar .component-1 .component_inner::after {
+    height: 14vw;
+  }
+  .fuelCar .component-2 {
+    top: 44vw;
+    left: 45vw;
+  }
+  .fuelCar .component-2 .component_inner::after {
+    height: 11vw;
+  }
+  .fuelCar .component-3 {
+    top: 41vw;
+    left: 59vw;
+  }
+  .fuelCar .component-3 .component_inner::before {
+    height: 7.5vw;
+    bottom: 40%;
+    left: -2.5vw;
+    -webkit-transform: rotate(-55deg);
+            transform: rotate(-55deg);
+  }
+  .fuelCar .component-3 .component_inner::after {
+    height: 6vw;
+    bottom: calc(100% + 1.8vw);
+    left: -5.3vw;
+  }
+  .fuelCar .component-4 {
+    top: 36vw;
+    left: 69vw;
+  }
+  .fuelCar .component-4 .component_inner::before {
+    height: 14vw;
+    bottom: -35%;
+    left: -5vw;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  .fuelCar .component-4 .component_inner::after {
+    height: 3vw;
+    bottom: calc(100% - 0.3vw);
+    left: -12vw;
+  }
+  .fuelCar .component-pic-1 {
+    width: 60.86vw;
+    top: 6.87vw;
+    left: 18.75vw;
+  }
+  .fuelCar .component-pic-2 {
+    width: 60.86vw;
+    top: 6.87vw;
+    left: 18.75vw;
+  }
+  .fuelCar .component-pic-3 {
+    width: 30.44vw;
+    top: 6.83vw;
+    left: 39.58vw;
+  }
+  .fuelCar .component-pic-4 {
+    width: 30.44vw;
+    top: 6.83vw;
+    left: 39.58vw;
+  }
+  .aerospace .component-1 {
+    top: 14vw;
+    left: 21vw;
+  }
+  .aerospace .component-1 .component_inner::before {
+    height: 10vw;
+    top: 33.8vw;
+    left: 6.1vw;
+  }
+  .aerospace .component-1 .component_inner::after {
+    height: 29vw;
+  }
+  .aerospace .component-2 {
+    top: 38vw;
+    left: 87.5vw;
+  }
+  .aerospace .component-2 .component_inner::before {
+    top: 2vw;
+  }
+  .aerospace .component-2 .component_inner::after {
+    width: 18.5vw;
+    height: 1px;
+    top: 17vw;
+    right: 6.3vw;
+  }
+  .aerospace .component-3 {
+    top: 81vw;
+    left: 87.5vw;
+  }
+  .aerospace .component-3 .component_inner::before {
+    height: 1px;
+    width: 43vw;
+  }
+  .aerospace .component-3 .component_inner::after {
+    height: 12.5vw;
+    bottom: calc(6.25vw / 2);
+    right: 49vw;
+  }
+  .aerospace .component-pic-1 {
+    width: 30.44vw;
+    top: 45vw;
+    left: 30vw;
+  }
+  .aerospace .component-pic-2 {
+    width: 30.44vw;
+    top: 45vw;
+    left: 30vw;
+  }
+  .motorcycle .component-1 {
+    top: 48.5vw;
+    left: 44.5vw;
+  }
+  .motorcycle .component-2 {
+    top: 53vw;
+  }
+  .motorcycle .component-2 .component_inner::before {
+    height: 7.5vw;
+    top: -20.2vw;
+    left: 1.1vw;
+  }
+  .motorcycle .component-2 .component_inner::after {
+    height: 14vw;
+  }
+  .motorcycle .component-pic-1 {
+    width: 50.25vw;
+    top: 6.83vw;
+    left: 24.45vw;
+  }
+  .motorcycle .component-pic-2 {
+    width: 30.44vw;
+    top: 6.83vw;
+    left: 39.58vw;
+  }
+  .agricultural .component-1 {
+    top: 42.12vw;
+    left: 60.69vw;
+  }
+  .agricultural .component-1 .component_inner::before {
+    height: 1px;
+    width: 15vw;
+    top: calc(6.25vw / 2);
+    left: 5.2vw;
+  }
+  .agricultural .component-1 .component_inner::after {
+    height: 11.8vw;
+    left: calc(15vw + 5.2vw);
+    bottom: calc((6.25vw / 2));
+  }
+  .agricultural .component-pic-1 {
+    width: 30.44vw;
+    top: 6.87vw;
+    left: 65vw;
+  }
+  .component_icon {
+    width: 5.2vw;
+    height: 5.2vw;
+  }
+  .component_icon_dash {
+    width: 6.25vw;
+    height: 6.25vw;
+  }
+  .component_inner {
+    width: 6.25vw;
+    height: 6.25vw;
+  }
+  .component_inner::after {
+    bottom: calc(100% - 0.6vw);
+  }
+  .medical_slider_left h1 {
+    font-size: 36px;
+  }
+  .medical_video {
+    padding-top: 50px;
+    padding-bottom: 70px;
   }
 }
 
@@ -3696,6 +5012,17 @@ main {
     font-size: 26px;
     bottom: 20px;
     left: 15px;
+  }
+  .medical_slider_left h1 {
+    font-size: 32px;
+  }
+  .medical_content p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .medical_spec {
+    padding-top: 70px;
+    padding-bottom: 42px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -61,16 +61,16 @@
                 opacity: 1;
             }
         }
+        p {
+            margin: 0;
+            width: calc(100% - 30px - 35px);
+            padding: 0 15px;
+            color: #231815;
+            font-size: 18px;
+        }
     }
     &_pdf {
         width: 30px;
-    }
-    p {
-        margin: 0;
-        width: calc(100% - 30px - 35px);
-        padding: 0 15px;
-        color: #231815;
-        font-size: 18px;
     }
     &_download {
         width: 35px;

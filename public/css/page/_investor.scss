@@ -1,0 +1,581 @@
+.invest {
+    &-tab {
+        justify-content: space-between;
+        .tab_link {
+            margin: 0;
+            padding: 18px 10px;
+            width: calc((100% - 45px) / 4);
+            text-align: center;
+        }
+    }
+    &_list {
+        &_title {
+            display: flex;
+            align-items: center;
+            padding: 20px 60px;
+            cursor: pointer;
+            border-bottom: 1px solid $main-deep;
+            h2 {
+                font-size: 24px;
+                color: $color-text;
+                font-weight: normal;
+                width: calc(100% - 30px);
+                padding-left: 13px;
+                margin: 0;
+            }
+            &.active {
+                background-color: #F8F8F8;
+                border:0;
+                .invest_list_icon {
+                    .bar {
+                        &.horizontal {
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .invest_list_icon {
+                    background-color: $main-color;
+                    .bar {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        &_icon {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: $transition-main;
+            .bar {
+                position: absolute;
+                width: 60%;
+                height: 3px;
+                background-color: $main-color;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                transition: $transition-main;
+                &.horizontal {
+                    transform: translate(-50%,-50%) rotate(90deg);
+                }
+            }
+        }
+        &_content {
+            display: none;
+            padding-bottom: 60px;
+            .report_item {
+                padding-left: 130px;
+            }
+        }
+    }
+}
+
+.revenue {
+    &-tab {
+        .tab_link {
+            width: calc((100% - 150px) / 3);
+            font-size: 18px;
+        }
+    }
+    &_report {
+        &_title {
+            position: relative;
+            // margin-bottom: 30px;
+            h2 {
+                text-align: center;
+                color: $main-color;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+            p {
+                text-align: center;
+                margin: 0;
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    }
+    &_download {
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        &_icon {
+            position: relative;
+            width: 20px;
+            height: 25px;
+            margin-right: 10px;
+            img{ 
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                top: 0;
+                left: 0;
+                transition: $transition-main;
+                &.hover {
+                    opacity: 0;
+                }
+            }
+        }
+        span {
+            color: $color-text;
+            font-size: 16px;
+            text-decoration: underline;
+            font-weight: 300;
+            transition: $transition-main;
+        }
+        &:hover {
+            .revenue_download_icon {
+                img {
+                    &.normal {
+                        opacity: 0;
+                    }
+                    &.hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            span {
+                color: $main-color;
+            }
+        }
+    }
+    &_table {
+        margin-top: 30px;
+        ul {
+            margin-top: 15px;
+            li {
+                font-weight: 300;
+                color: $color-text;
+                margin-bottom: 3px;
+            }
+        }
+        td {
+            width: 33.3333%;
+        }
+    }
+}
+
+.year-select {
+    margin: 70px 0;
+    span {
+        font-weight: 300;
+        color: $color-text;
+        margin-right: 10px;
+    }
+    select {
+        border: 1px solid $main-deep;
+        padding: 15px 100px 15px 15px;
+        appearance: none;
+        background-image: url(../img/arrow-deepblue-down.svg);
+        background-size: 15px;
+        background-position: calc(100% - 20px) center;
+        background-repeat: no-repeat;
+        outline: none;
+    }
+}
+
+.finance {
+    &_merge {
+        margin-bottom: 75px;
+    }
+    &_list {
+        &_title {
+            border-bottom: 3px solid $main-color;
+            background-color: #F8F8F8;
+            padding: 17px 60px;
+            h2 {
+                margin: 0;
+                color: $color-text;
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+.stock {
+    font-weight: 300;
+    color: $main-color;
+    top: 20px;
+    left: 0;
+    position: absolute;
+    &_table {
+        overflow-x: auto;
+        td {
+            padding: 15px 10px;
+            &.br {
+                border-right: 1px solid $color-text;
+            }
+        }
+        .stock_year {
+            width: 8%;
+        }
+        .stock_stockDividend {
+            width: 22%;
+        }
+        .stock_cashDividend {
+            width: 17%;
+        }
+        .stock_day{
+            width: 13.25%;
+        }
+        table {
+            min-width: 1280px;
+        }
+    }
+    &_open {
+        background-color: #F8F8F8;
+        padding: 60px 55px;
+        color: $color-text;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.8;
+        p {
+            margin-bottom: 40px;
+            span {
+                font-weight: 500;
+                color: $main-color;
+            }
+        }
+        ul {
+            margin-bottom: 65px;
+            li {
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+        button {
+            border: 1px solid $main-color;
+            padding: 17px 45px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            img {
+                width: 20px;
+                margin-right: 10px;
+            }
+            span {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+#leaveModal {
+    .modal-dialog {
+        // max-width: 1350px;
+        max-width: none;
+        width: 70vw;
+        margin-top: 100px;
+    }
+    .modal-content {
+        border: 0;
+        border-radius: 0;
+
+    }
+    .modal-header {
+        text-align: center;
+        border: 0;
+        padding: 40px 60px 0;
+        h5 {
+            color: $color-text;
+            font-size: 28px;
+            margin: 0;
+        }
+    }
+    .modal-body {
+        padding: 40px 60px;
+    }
+    .modal-footer {
+        border: 0;
+        padding: 0 60px 40px;
+        justify-content: center;
+        button, a {
+            color: #fff;
+            border-radius: 0;
+            margin: 0 25px;
+            padding: 10px 40px;
+            display: block;
+            width: fit-content;
+        }
+        .btn-leave {
+            background-color: $main-color;
+        }
+        .btn-cancel {
+            background-color: #A6ACB1;
+        }
+    }
+}
+
+.service {
+    &_item {
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        border-bottom: 1px solid $main-color;
+        padding-top: 40px;
+        padding-bottom: 90px;
+        color: $color-text;
+        font-weight: 300;
+        font-size: 20px;
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid $main-deep;
+            padding-bottom: 40px;
+            color: $main-color;
+            margin-bottom: 40px;
+        }
+        &.agency {
+            margin-top: 55px;
+            padding-bottom: 50px;
+            .service_text {
+                li {
+                    .name {
+                        width: auto;
+                    }
+                }
+            }
+            .service_inform {
+                width: fit-content;
+                margin: 40px auto 0;
+                li {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+    &_text {
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            .person {
+                margin-right: 20px;
+                text-align: left;
+                width: 105px;
+                display: block;
+            }
+            .name {
+                width: 172px;
+                font-weight: 500;
+            }
+        }
+    }
+    &_inform {
+        margin-top: 40px;
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            img {
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px){ 
+    .revenue {
+        &-tab {
+            .tab_link {
+                width: calc((100% - 100px) / 3);
+                font-size: 16px;
+            }
+        }
+    }
+    .stock {
+        &_table {
+            .container {
+                max-width: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .invest {
+        &-tab {
+            .tab_link {
+                padding: 13px 5px;
+                width: calc((100% - 15px) / 2);
+                margin-bottom: 15px;
+            }
+        }
+        &_list {
+            &_title {
+                padding: 20px 30px;
+            }
+            &_content {
+                .report_item {
+                    padding-left: 90px;
+                }
+            }
+        }
+    }
+    .revenue {
+        &-tab {
+            .tab_link {
+                width: calc((100% - 60px) / 3);
+            }
+        }
+        &_download {
+            position: static;
+            width: fit-content;
+            margin: 15px auto 0;
+        }
+    }
+    .year-select {
+        margin: 35px 0;
+    }
+    .finance {
+        &_list {
+            &_title {
+                padding: 17px 20px;
+                h2 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .stock {
+        position: static;
+        margin-bottom: 30px;
+        text-align: center;
+        &_open {
+            font-size: 16px;
+        }
+    }
+    #leaveModal {
+        .modal-header {
+            padding: 30px 40px 0;
+        }
+        .modal-body {
+            padding: 40px 40px;
+        }
+        .modal-footer {
+            padding: 30px 40px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .invest {
+        &_list {
+            &_title {
+                padding: 15px 20px;
+                h2 {
+                    font-size: 20px;
+                }
+            }
+            &_content {
+                .report_item {
+                    padding-left: 35px;
+                }
+            }
+        }
+    }
+    .revenue {
+        &-tab {
+            .tab_link {
+                width: calc((100% - 30px) / 3);
+            }
+        }
+        &_table {
+            td {
+                width: calc(75% / 2);
+                padding: 15px 10px;
+            }
+            .table-invest_month {
+                width: 25%;
+            }
+        }
+    }
+    .stock {
+        &_open {
+            padding: 40px 30px;
+        }
+    }
+    #leaveModal {
+        .modal-dialog {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        .modal-header {
+            padding: 30px 25px 0;
+        }
+        .modal-body {
+            padding: 30px 25px 0;
+        }
+        .modal-footer {
+            padding: 40px 25px 30px;
+            button, a {
+                margin: 0 10px;
+                padding: 10px 35px;
+            }
+            a {
+                margin-left: 0;
+            }
+            button {
+                margin-right: 0;
+            }
+        }
+    }
+    .service {
+        &_item {
+            font-size: 16px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            h2 {
+                font-size: 22px;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+            }
+        }
+        &_text {
+            li {
+                .person {
+                    width: 90px;
+                    margin-right: 10px;
+                }
+                .name {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+    .revenue {
+        &-tab {
+            .tab_link {
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:380px) {
+    .stock {
+        &_open {
+            button {
+                width: 100%;
+                padding: 17px 5px;
+                justify-content: center;
+
+            }
+        }
+    }
+}

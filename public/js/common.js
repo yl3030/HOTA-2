@@ -126,6 +126,12 @@ $(".componentModal_arrow").click(function(){
     $(".componentModal_name").text(modalName);
 })
 
+// 檔案
+$(".invest_list_title").click(function(){
+    $(this).toggleClass("active");
+    $(this).parents(".invest_list_item").find(".invest_list_content").slideToggle(500);
+})
+
 
 // youtube
 var tag = document.createElement("script");

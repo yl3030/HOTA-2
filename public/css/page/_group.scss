@@ -527,6 +527,373 @@
     }
 }
 
+.supplier {
+    &-form {
+        margin: 0 auto;
+        width: 100%;
+        label {
+            font-size: 20px;
+            color: $color-text;
+            letter-spacing: 0.15em;
+        }
+        // input {
+        //     border: 1px solid $main-deep;
+        //     height: 50px;
+        //     padding: 10px 15px;
+        //     &::placeholder {
+        //         color: #A6ACB1;
+        //     }
+        // }
+        button {
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            background-color: $main-color;
+        }
+        &_item {
+            margin-bottom: 30px;
+        }
+        &_link {
+            color: #A6ACB1;
+            font-weight: 300;
+            margin-top: 30px;
+            margin-bottom: 95px;
+            position: relative;
+            max-width: 440px;
+            padding: 0 20px;
+            margin: 30px auto 95px;
+            a {
+                display: inline-block;
+                padding: 0 15px;
+                border-left: 1px solid #A6ACB1;
+                line-height: 1;
+                &:last-child {
+                    border-right: 1px solid #A6ACB1;
+                }
+            }
+        }
+        &_remark {
+            width: 210px;
+            color: #E60012;
+            font-weight: 300;
+            padding-left: 10px;
+            border-left: 3px solid #E60012;
+            position: absolute;
+            left: 120%;
+            bottom: -25%;
+        }
+        &.form-login
+         {
+            max-width: 440px;
+            padding: 0 20px;
+            position: relative;
+            label {
+                width: 60px;
+            }
+            input {
+                width: calc(100% - 60px);
+            }
+            button {
+                margin-top: 20px;
+            }
+        }
+        &.form-passwordHelp {
+            max-width: 440px;
+            padding: 0 20px 200px;
+            position: relative;
+            input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        &.form-passwordChange {
+            max-width: 440px;
+            padding: 0 20px 200px;
+            position: relative;
+            &_item {
+                margin-bottom: 20px;
+            }
+            label {
+                width: 100%;
+                display: block;
+                margin-bottom: 18px;
+            }
+            input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &_contact {
+        background-color: #4EA16E;
+        padding: 25px 20px;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        p {
+            margin-bottom: 5px;
+        }
+        &_inform {
+            span {
+                margin-right: 45px;
+                display: block;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &_title {
+        h1 {
+            font-size: 40px;
+            color: $color-text;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 80px;
+                height: 3px;
+                background-color: $main-color;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        ul {
+            li {
+                color: $color-text;
+                font-weight: 300;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+        }
+        button {
+            background-color: #A6ACB1;
+            color: #fff;
+            padding: 20px 50px;
+            height: fit-content;
+        }
+        &_inner {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $main-deep;
+        }
+    }
+    &_content {
+        padding-top: 60px;
+        .nav-tabs {
+            border: 0;
+            padding-bottom: 20px;
+            .tab_link {
+                width: 200px;
+                padding: 18px;
+                margin: 0 40px 0 0;
+                text-align: center;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &_table {
+        overflow-x: auto;
+        table {
+            width: 100%;
+            text-align: center;
+            min-width: 920px;
+            .company {
+                width: 22%;
+            }
+            .name {
+                width: 15%;
+            }
+            .file {
+                width: 36%;
+            }
+            .date {
+                width: 13.5%;
+            }
+        }
+        td {
+            border: 1px solid $main-deep;
+            padding: 10px;
+            font-weight: 300;
+            a {
+                color: #175DAE;
+            }
+        }
+        &_title {
+            background-color: #F8F8F8;
+            font-weight: 500 !important;
+            font-size: 18px;
+            color: $color-text;
+        }
+    }
+    &_signin {
+        &_tab {
+            width: 400px;
+            padding-left: 150px;
+            background-color: #F8F8F8;
+            padding-top: 95px;
+            h1 {
+                font-size: 40px;
+                padding-bottom: 25px;
+                margin-bottom: 70px;
+                position: relative;
+                color: $color-text;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 80px;
+                    height: 3px;
+                    background-color: $main-color;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        &_btn {
+            padding-right: 43px;
+            a {
+                width: 100%;
+                display: block;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                background-color: #A6ACB1;
+                color: #fff;
+                padding: 20px 30px;
+                &.active {
+                    background-color: $fifth-color;
+                }
+            }
+        }
+        &_content {
+            width: calc(100% - 400px);
+            padding-right: 150px;
+            padding-left: 65px;
+            padding-bottom: 140px;
+            &.step1, &.step3 {
+                .breadcrumb {
+                    padding-bottom: 190px;
+                    margin-bottom: 0;
+                }
+            }
+            &.step2 {
+                .breadcrumb {
+                    padding-bottom: 130px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &_numInput {
+            &_form {
+                margin-bottom: 35px;
+                input {
+                    width: calc(70% - 15px);
+                    // height: 50px;
+                    // border: 1px solid $main-deep;
+                }
+                button {
+                    width: 30%;
+                    background-color: #F0AE4F !important;
+                    color: #fff;
+                    padding: 10px !important;
+                    height: 50px;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+            }
+            &_comfirm {
+                color: $color-text;
+                margin-bottom: 50px;
+                label {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 22px;
+                    margin: 0;
+                }
+            }
+            button {
+                background-color: $main-color;
+                color: #fff;
+                padding: 15px 40px;
+            }
+        }
+        &_inform {
+            color: $color-text;
+            p {
+                font-weight: 300;
+                margin-bottom: 30px;
+            }
+            &_item {
+                label {
+                    width: 100%;
+                    display: block;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                input {
+                    width: 100%;
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    margin-bottom: 30px;
+                }
+            }
+            &_btn {
+                margin-top: 40px;
+                a {
+                    padding: 15px 30px;
+                    color: #fff;
+                    background-color: $main-color;
+                    margin-right: 30px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        &_finish {
+            h2 {
+                font-size: 20px;
+                color: $color-text;
+                margin-bottom: 30px;
+                padding-top: 5px;
+            }
+            p {
+                font-weight: 300;
+                margin-bottom: 85px;
+                font-size: 17px;
+            }
+            a {
+                display: block;
+                width: fit-content;
+                background-color: $main-color;
+                color: #fff;
+                font-weight: 300;
+                padding: 15px 40px;
+            }
+        }
+    }
+}
+
+.passwordHelp {
+    &_title {
+        margin-bottom: 25px;
+    }
+    &_intro {
+        text-align: center;
+        font-weight: 300;
+        font-size: 17px;
+        margin-bottom: 75px;
+        padding: 0 20px;
+    }
+}
+
+
+
+
 @media screen and (max-width:1200px) {
     .intro {
        &_item {
@@ -593,6 +960,32 @@
             ul {
                 li {
                     font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .supplier {
+        &-form {
+            &_remark {
+                left: 115%;
+            }
+        }
+        &_signin {
+            &_tab {
+                padding-left: 100px;
+            }
+            &_content {
+                padding-right: 100px;
+                padding-left: 45px;
+            }
+            &_numInput {
+                &_form {
+                    button {
+                        font-size: 16px !important;
+                    }
                 }
             }
         }
@@ -697,6 +1090,48 @@
             margin-bottom: 40px;
         }
      }
+     .supplier {
+        &-form {
+            &_remark {
+                position: static;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+        &_contact {
+            &_inform {
+                span {
+                    margin: 0;
+                }
+            }
+        }
+        &_signin {
+            &_btn {
+                margin-bottom: 50px;
+                padding-right: 0;
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        width: calc((100% - 30px) / 3);
+                        text-align: center;
+                        padding: 20px 10px;
+                    }
+                }
+            }
+            &_content {
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+                .inner {
+                    max-width: 720px;
+                    margin: 0 auto;
+                    width: 100%;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -737,6 +1172,15 @@
         &_item {
             &_text {
                 padding: 45px;
+            }
+        }
+    }
+    .supplier {
+        &_signin {
+            &_btn {
+                .container {
+                    max-width: none;
+                }
             }
         }
     }
@@ -808,6 +1252,42 @@
             }
         } 
     } 
+    .supplier {
+        &_contact {
+            font-size: 18px;
+        }
+        &_content {
+            .nav-tabs {
+                .tab_link {
+                    width: 150px;
+                    margin-right: 30px;
+                }
+            }
+        }
+        &_signin {
+            &_btn {
+                .container {
+                    display: block;
+                    a {
+                        width: 100%;
+                        margin-bottom: 15px;
+                        padding: 15px 10px;
+                    }
+                }
+            }
+            &_numInput {
+                &_form {
+                    input {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                    button {
+                        width: 145px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:450px) {
@@ -904,6 +1384,32 @@
                     p {
                         font-size: 22px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .supplier {
+        &-form {
+            &_link {
+                a {
+                    padding: 0 12px;
+                    font-size: 15px;
+                }
+            }
+            &_remark {
+                font-size: 15px;
+            }
+        }
+        &_content {
+            .nav-tabs {
+                display: flex;
+                justify-content: space-between;
+                .tab_link  {
+                    width: calc(50% - 15px);
+                    margin: 0;
                 }
             }
         }

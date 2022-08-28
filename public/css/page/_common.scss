@@ -41,6 +41,24 @@ input, button {
     outline: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input {
+    border: 1px solid $main-deep;
+    height: 50px;
+    padding: 10px 15px;
+    &::placeholder {
+        color: #A6ACB1;
+        font-weight: 300;
+    }
+}
+
 main {
     padding-top: 100px;
     overflow: hidden;
@@ -157,13 +175,14 @@ main {
     &_link {
         display: block;
         margin: 0 30px;
-        border: 1px solid $third-color;
+        border: 1px solid $third-color !important;
         color: $third-color;
         padding: 18px 90px;
         transition: $common-transition;
+        border-radius: 0 !important;
         &.active, &:hover {
-            color: #fff;
-            background-color: $third-color;
+            color: #fff !important;
+            background-color: $third-color !important;
         }
         &:first-child {
             margin-left: 0;

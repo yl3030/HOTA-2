@@ -11,10 +11,10 @@
                                 <li>
                                     <h4>和大集團</h4>
                                     <ul class="header_nav_third">
-                                        <li><a href="">集團簡介</a></li>
-                                        <li><a href="">企業願景</a></li>
-                                        <li><a href="">核心競爭力</a></li>
-                                        <li><a href="">關係企業</a></li>
+                                        <li><a href="introduction.php">集團簡介</a></li>
+                                        <li><a href="vision.php">企業願景</a></li>
+                                        <li><a href="competition.php">核心競爭力</a></li>
+                                        <li><a href="enterprise.php">關係企業</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -22,8 +22,8 @@
                                 <li>
                                     <h4>新聞中心</h4>
                                     <ul class="header_nav_third">
-                                        <li><a href="">最新消息</a></li>
-                                        <li><a href="">新聞集錦</a></li>
+                                        <li><a href="news.php">最新消息</a></li>
+                                        <li><a href="video.php">新聞集錦</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -31,17 +31,17 @@
                                 <li>
                                     <h4>永續經營</h4>
                                     <ul class="header_nav_third">
-                                        <li><a href="">ESG政策與目標</a></li>
-                                        <li><a href="">環境保護與社會責任</a></li>
+                                        <li><a href="#">ESG政策與目標</a></li>
+                                        <li><a href="responsibility.php">環境保護與社會責任</a></li>
                                         <!-- <li><a href="">永續績效</a></li> -->
-                                        <li><a href="">國際品質認證</a></li>
-                                        <li><a href="">高和春貴慈善基金會</a></li>
+                                        <li><a href="certify.php">國際品質認證</a></li>
+                                        <li><a href="fundation.php">高和春貴慈善基金會</a></li>
                                     </ul>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <h4><a href="">全球據點</a></h4>
+                                    <h4><a href="place.php">全球據點</a></h4>
                                 </li>
                             </ul>
                         </div>
@@ -53,17 +53,17 @@
                         <div class="header_nav_second_content d-flex justify-content-center">
                             <ul>
                                 <li>
-                                    <h4><a href="">傳動系統零組件</a></h4>
+                                    <h4><a href="transmission.php">傳動系統零組件</a></h4>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <h4><a href="">工具機</a></h4>
+                                    <h4><a href="machineTool-list.php">工具機</a></h4>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <h4><a href="">醫療輔具</a></h4>
+                                    <h4><a href="medical-list.php">醫療輔具</a></h4>
                                 </li>
                             </ul>
                         </div>
@@ -77,9 +77,10 @@
                                 <li>
                                     <h4>公司治理</h4>
                                     <ul class="header_nav_third">
-                                        <li><a href="">公司組織架構</a></li>
-                                        <li><a href="">董事會議事錄</a></li>
-                                        <li><a href="">功能性委員會</a></li>
+                                        <li><a href="director.php">董事會</a></li>
+                                        <li><a href="structure.php">公司組織架構</a></li>
+                                        <li><a href="committee.php">委員會</a></li>
+                                        <li><a href="operate.php">公司治理運作情形</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -87,10 +88,9 @@
                                 <li>
                                     <h4>財務資訊</h4>
                                     <ul class="header_nav_third">
-                                        <li><a href="">每月營收報告</a></li>
-                                        <li><a href="">財務報表</a></li>
-                                        <li><a href="">歷年股利分派</a></li>
-                                        <li><a href="">公開資訊觀測站</a></li>
+                                        <li><a href="revenue.php">每月營收報告</a></li>
+                                        <li><a href="finance.php">財務報表</a></li>
+                                        <li><a href="year-report.php">公司年報</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -98,13 +98,15 @@
                                 <li>
                                     <h4>股東會/法說會資訊</h4>
                                     <ul class="header_nav_third">
-                                        <li><a href="">股東會議事手冊</a></li>
+                                        <li><a href="stockholder.php">股東會/法說會</a></li>
+                                        <li><a href="stock-inform.php">股利資訊</a></li>
+                                        <li><a href="open-stock.php">公開股市觀測站</a></li>
                                     </ul>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <h4><a href="">服務代理資訊與窗口</a></h4>
+                                    <h4><a href="service.php">服務代理資訊與窗口</a></h4>
                                 </li>
                             </ul>
                         </div>
@@ -133,7 +135,7 @@
                         <div class="header_nav_second_content d-flex justify-content-center">
                             <ul>
                                 <li>
-                                    <h4><a href="">供應商專區</a></h4>
+                                    <h4><a href="supplier-login.php">供應商專區</a></h4>
                                 </li>
                             </ul>
                             <ul>
@@ -207,31 +209,31 @@
                 <li class="header_nav-m_dropdown_item">
                     <a class="header_nav-m_dropdown_title">和大集團</a>
                     <ul class="header_nav-m_dropdown-second">
-                        <li><a href="">集團簡介</a></li>
-                        <li><a href="">企業願景</a></li>
-                        <li><a href="">核心競爭力</a></li>
-                        <li><a href="">關係企業</a></li>
+                        <li><a href="introduction.php">集團簡介</a></li>
+                        <li><a href="vision.php">企業願景</a></li>
+                        <li><a href="competition.php">核心競爭力</a></li>
+                        <li><a href="enterprise.php">關係企業</a></li>
                     </ul>
                 </li>
                 <li class="header_nav-m_dropdown_item">
                     <a class="header_nav-m_dropdown_title">新聞中心</a>
                     <ul class="header_nav-m_dropdown-second">
-                        <li><a href="">最新消息</a></li>
-                        <li><a href="">新聞集錦</a></li>
+                        <li><a href="news.php">最新消息</a></li>
+                        <li><a href="video.php">新聞集錦</a></li>
                     </ul>
                 </li>
                 <li class="header_nav-m_dropdown_item">
                     <a class="header_nav-m_dropdown_title">永續經營</a>
                     <ul class="header_nav-m_dropdown-second">
                         <li><a href="">ESG政策與目標</a></li>
-                        <li><a href="">環境保護與社會責任</a></li>
+                        <li><a href="responsibility.php">環境保護與社會責任</a></li>
                         <!-- <li><a href="">永續績效</a></li> -->
-                        <li><a href="">國際品質認證</a></li>
-                        <li><a href="">高和春貴慈善基金會</a></li>
+                        <li><a href="certify.php">國際品質認證</a></li>
+                        <li><a href="fundation.php">高和春貴慈善基金會</a></li>
                     </ul>
                 </li>
                 <li class="header_nav-m_dropdown_item">
-                    <a href="" class="header_nav-m_dropdown_title">全球據點</a>
+                    <a href="place.php" class="header_nav-m_dropdown_title">全球據點</a>
                 </li>
             </ul>
         </li>
@@ -242,13 +244,13 @@
             </div>
             <ul class="header_nav-m_dropdown">
                 <li class="header_nav-m_dropdown_item">
-                    <a class="header_nav-m_dropdown_title">傳動系統零組件</a>
+                    <a href="transmission.php" class="header_nav-m_dropdown_title">傳動系統零組件</a>
                 </li>
                 <li class="header_nav-m_dropdown_item">
-                    <a class="header_nav-m_dropdown_title">工具機</a>
+                    <a href="machineTool-list.php" class="header_nav-m_dropdown_title">工具機</a>
                 </li>
                 <li class="header_nav-m_dropdown_item">
-                    <a class="header_nav-m_dropdown_title">醫療輔具</a>
+                    <a href="medical-list.php" class="header_nav-m_dropdown_title">醫療輔具</a>
                 </li>
             </ul>
         </li>
@@ -262,28 +264,30 @@
                 <li class="header_nav-m_dropdown_item">
                     <a class="header_nav-m_dropdown_title">公司治理</a>
                     <ul class="header_nav-m_dropdown-second">
-                        <li><a href="">公司組織架構</a></li>
-                        <li><a href="">董事會議事錄</a></li>
-                        <li><a href="">功能性委員會</a></li>
+                        <li><a href="director.php">董事會</a></li>
+                        <li><a href="structure.php">公司組織架構</a></li>
+                        <li><a href="committee.php">委員會</a></li>
+                        <li><a href="operate.php">公司治理運作情形</a></li>
                     </ul>
                 </li>
                 <li class="header_nav-m_dropdown_item">
                     <a class="header_nav-m_dropdown_title">財務資訊</a>
                     <ul class="header_nav-m_dropdown-second">
-                        <li><a href="">每月營收報告</a></li>
-                        <li><a href="">財務報表</a></li>
-                        <li><a href="">歷年股利分派</a></li>
-                        <li><a href="">公開資訊觀測站</a></li>
+                        <li><a href="revenue.php">每月營收報告</a></li>
+                        <li><a href="finance.php">財務報表</a></li>
+                        <li><a href="year-report.php">公司年報</a></li>
                     </ul>
                 </li>
                 <li class="header_nav-m_dropdown_item">
                     <a class="header_nav-m_dropdown_title">股東會/法說會資訊</a>
                     <ul class="header_nav-m_dropdown-second">
-                        <li><a href="">股東會議事手冊</a></li>
+                        <li><a href="stockholder.php">股東會/法說會</a></li>
+                        <li><a href="stock-inform.php">股利資訊</a></li>
+                        <li><a href="open-stock.php">公開股市觀測站</a></li>
                     </ul>
                 </li>
                 <li class="header_nav-m_dropdown_item">
-                    <a href="" class="header_nav-m_dropdown_title">服務代理資訊與窗口</a>
+                    <a href="service.php" class="header_nav-m_dropdown_title">服務代理資訊與窗口</a>
                 </li>
             </ul>
         </li>
@@ -307,7 +311,7 @@
                 <img src="./public/img/icon_arrow-green.svg" alt="">
             </div>
             <ul class="header_nav-m_dropdown">
-                <li><a href="">供應商專區</a></li>
+                <li><a href="supplier-login.php">供應商專區</a></li>
                 <li><a href="">同仁專區</a></li>
             </ul>
         </li>

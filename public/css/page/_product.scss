@@ -9,7 +9,7 @@
         }
         &_item {
             &:hover {
-                .product-list_picTop, .product-list_picBottom {
+                .product-list_picTop, .product-list_picBottom, .product-list_picTool {
                     >img {
                         transform: scale(1.1);
                     }
@@ -45,8 +45,10 @@
             color: #fff;
             font-size: 36px;
             margin: 0;
-            bottom: 25px;
-            left: 20px;
+            // bottom: 25px;
+            bottom: 7%;
+            // left: 20px;
+            left: 8.5%;
             text-shadow: 0 0 10px rgba(0,0,0,0.5);
             font-weight: 500;
         }
@@ -67,6 +69,15 @@
     }
     &-componentList {
         background-color: #f8f8f8;
+        &.tool-tab {
+            .product-componentList_tab {
+                .nav-tabs {
+                    .nav-link {
+                        margin-right: 128px;
+                    }
+                }
+            }
+        }
         &_tab {
             background-color: #fff;
             .nav-tabs {
@@ -78,12 +89,13 @@
                 }
                 .nav-link {
                     border: 0;
-                    padding: 20px 0;
-                    font-size: 18px;
-                    margin-right: 50px;
+                    padding: 25px 0;
+                    font-size: 19px;
+                    margin-right: 72px;
                     color: $third-color;
                     position: relative;
                     white-space: nowrap;
+                    letter-spacing: 0.05em;
                     &::after {
                         position: absolute;
                         content: "";
@@ -119,7 +131,7 @@
             }
         }
         &_tabContent {
-            padding-top: 100px;
+            padding-top: 123px;
         }
         &_item {
             margin-top: 53px;
@@ -134,7 +146,7 @@
                 span {
                     color: $color-text;
                     font-weight: 300;
-                    font-size: 18px;
+                    font-size: 19px;
                 }
             }
             &:hover {
@@ -652,8 +664,8 @@
         border-bottom: 1px solid $main-deep;
     }
     &_slider {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 80px;
+        padding-bottom: 107px;
         &_left {
             width: 45%;
             padding-right: 55px;
@@ -675,7 +687,7 @@
                 }
             }
             p {
-                font-size: 18px;
+                font-size: 19px;
             }
         }
 
@@ -686,7 +698,7 @@
     &Small {
         width: 50%;
         margin-left: 0;
-        margin-top: 40px;
+        margin-top: 54px;
         &_pic {
             width: 100%;
             padding-bottom: 100%;
@@ -740,9 +752,9 @@
         }
     }
     &_content {
-        padding-top: 100px;
+        padding-top: 117px;
         background-color: #F8F8F8;
-        padding-bottom: 130px;
+        padding-bottom: 155px;
         &_pic {
             width: 100%;
             padding-bottom: 92%;
@@ -757,18 +769,18 @@
             }
         }
         h2 {
-            margin-bottom: 100px;
+            margin-bottom: 128px;
         }
         p {
             text-align: center;
             margin: 20px 0 0;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 300;
         }
     }
     &_feature {
-        padding-top: 70px;
-        padding-bottom: 45px;
+        padding-top: 90px;
+        padding-bottom: 57px;
         background-image: url(../img/medical-wheelchair-bg.png);
         background-size: cover;
         background-position: center;
@@ -776,7 +788,7 @@
         ul {
             li {
                 color: $color-text;
-                font-size: 20px;
+                font-size: 24px;
                 font-weight: 300;
                 margin-bottom: 5px;
             }
@@ -803,7 +815,7 @@
             letter-spacing: 0.05em;
         }
         p {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: 300;
             color: $color-text;
             letter-spacing: 0.2em;
@@ -837,13 +849,14 @@
         }
     }
     &_video {
-        padding-top: 100px;
+        padding-top: 124px;
         padding-bottom: 95px;
         &_pic {
             width: 100%;
             padding-bottom: 62%;
             position: relative;
-            margin-bottom: 35px;
+            margin-bottom: 65px;
+            cursor: pointer;
             img {
                 position: absolute;
                 width: 100%;
@@ -853,13 +866,21 @@
                 left: 0;
             }
         }
+        .row {
+            margin-left: -20px;
+            margin-right: -20px;
+            >div {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
     }
 }
 
 .tool {
     &_pic {
-        padding-top: 60px;
-        padding-bottom: 45px;
+        padding-top: 80px;
+        padding-bottom: 60px;
         img {
             margin: 0 auto;
             width: 56%;
@@ -867,9 +888,9 @@
         }
     }
     &_spec {
-        padding-top: 100px;
+        padding-top: 121px;
         background-color: #F7F7F7;
-        padding-bottom: 85px;
+        padding-bottom: 107px;
         .table-common {
             tr {
                 &:nth-child(even) {
@@ -961,8 +982,8 @@
         }
         &_special {
             h2 {
-                font-size: 36px;
-                margin-bottom: 30px;
+                font-size: 34px;
+                margin-bottom: 25px;
             }
             p {
                 font-size: 18px;
@@ -1394,9 +1415,14 @@
     }
     .medical {
         &_slider {
+            padding-top: 50px;
+            padding-bottom: 60px;
             &_left {
                 h1 {
                     font-size: 32px;
+                }
+                p {
+                    font-size: 17px;
                 }
             }
         }

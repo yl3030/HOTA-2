@@ -1,6 +1,6 @@
 .intro {
     &_content {
-        padding: 60px 0;
+        padding: 72px 0;
     }
     &_item {
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -24,12 +24,12 @@
         }
         &_text {
             width: 64%;
-            padding: 40px 60px;
+            padding: 40px 103px;
             h3 {
                 font-weight: normal;
                 color: $main-color;
-                margin-bottom: 10px;
-                font-size: 24px;
+                margin-bottom: 16px;
+                font-size: 28px;
             }
         }
     }
@@ -171,24 +171,25 @@
     &_item {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin-bottom: 45px;
         .year {
             margin: 0;
             color: $main-color;
             font-weight: 700;
-            font-size: 22px;
+            font-size: 23px;
             font-family: $font-lato;
-            width: 60px;
+            width: 65px;
             transform: translateY(-3px);
         }
         ul {
-            width: calc(100% - 60px);
+            width: calc(100% - 65px);
             li {
                 font-weight: 300;
                 position: relative;
                 padding-left: 35px;
                 color: $color-text;
                 margin-bottom: 8px;
+                font-size: 19px;
                 &::before {
                     position: absolute;
                     content: "";
@@ -236,7 +237,7 @@
             width: 100%;
             position: absolute;
             color: #fff;
-            font-size: 50px;
+            font-size: 46px;
             font-weight: 600;
             text-shadow: 0 5px 10px rgba(0,0,0,0.8);
             top: 50%;
@@ -252,7 +253,7 @@
         display: flex;
         flex-wrap: wrap;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-        margin-bottom: 80px;
+        margin-bottom: 89px;
         &_pic {
             width: 53%;
             padding-bottom: calc(53% * 0.65);
@@ -276,7 +277,7 @@
                 h3 {
                     color: $third-color;
                     position: relative;
-                    padding-bottom: 20px;
+                    padding-bottom: 25px;
                     border-bottom: 1px solid $third-color;
                     font-weight: 400;
                     font-size: 40px;
@@ -292,7 +293,7 @@
                     }
                 }
                 p {
-                    margin: 15px 0 0;
+                    margin: 20px 0 0;
                     font-size: 28px;
                     font-weight: 300;
                     letter-spacing: 0.1em;
@@ -307,11 +308,12 @@
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 242px;
     .title-page {
-        margin-bottom: 100px;
+        margin-bottom: 131px;
     }
     &_item {
-        margin-bottom: 50px;
+        margin-bottom: 65px;
         a {
             font-size: 28px;
             font-weight: 500;
@@ -327,7 +329,7 @@
             margin: 0;
             position: relative;
             padding-left: 18px;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 300;
             &::before {
                 position: absolute;
@@ -369,7 +371,7 @@
         }
         &_text {
             width: 50%;
-            padding: 55px 40px 55px 75px;
+            padding: 68px 63px 68px 93px;
             display: flex;
             flex-wrap: wrap;
             align-content: space-between;
@@ -378,7 +380,7 @@
             }
             h3 {
                 color: $third-color;
-                font-size: 38px;
+                font-size: 36px;
                 font-weight: normal;
                 padding-bottom: 30px;
                 position: relative;
@@ -399,7 +401,7 @@
                 li {
                     padding-left: 20px;
                     position: relative;
-                    font-size: 19px;
+                    font-size: 17px;
                     font-weight: 300;
                     margin-bottom: 15px;
                     line-height: 1.8;
@@ -424,6 +426,7 @@
                 background-color: $third-color;
                 font-weight: 300;
                 transition: $common-transition;
+                font-size: 14px;
                 img {
                     width: 8px;
                     position: absolute;
@@ -451,7 +454,7 @@
         padding-top: 65px;
         &_item {
             padding-left: calc((100vw - 1320px) / 2);
-            margin-bottom: 135px;
+            margin-bottom: 205px;
             display: flex;
             flex-wrap: wrap;
             &_pic {
@@ -488,7 +491,7 @@
                     &::before {
                         position: absolute;
                         content: "";
-                        width: 130%;
+                        width: 115%;
                         height: 1px;
                         background-color: $main-color;
                         bottom: 0;
@@ -731,8 +734,10 @@
     }
     &_signin {
         &_tab {
-            width: 400px;
-            padding-left: 150px;
+            // width: 400px;
+            width: 31%;
+            // padding-left: 150px;
+            padding-left: calc((100vw - 1320px) / 2 + 50px);
             background-color: #F8F8F8;
             padding-top: 95px;
             h1 {
@@ -768,13 +773,15 @@
             }
         }
         &_content {
-            width: calc(100% - 400px);
-            padding-right: 150px;
+            // width: calc(100% - 400px);
+            width: 69%;
+            // padding-right: 150px;
+            padding-right: calc((100vw - 1320px) / 2 + 42px);
             padding-left: 65px;
             padding-bottom: 140px;
             &.step1, &.step3 {
                 .breadcrumb {
-                    padding-bottom: 190px;
+                    padding-bottom: 195px;
                     margin-bottom: 0;
                 }
             }
@@ -788,6 +795,7 @@
         &_numInput {
             &_form {
                 margin-bottom: 35px;
+                width: 88%;
                 input {
                     width: calc(70% - 15px);
                     // height: 50px;
@@ -808,7 +816,7 @@
                 margin-bottom: 50px;
                 label {
                     display: block;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                 }
                 p {
                     font-size: 22px;
@@ -960,6 +968,15 @@
             ul {
                 li {
                     font-size: 18px;
+                }
+            }
+        }
+    }
+    .supplier {
+        &_signin {
+            &_btn {
+                a {
+                    padding: 15px;
                 }
             }
         }
@@ -1241,6 +1258,7 @@
         }
     }
     .enterprise {
+        padding-bottom: 120px;
         &_item {
             margin-bottom: 30px;
             a {
@@ -1285,6 +1303,12 @@
                         width: 145px;
                     }
                 }
+            }
+        }
+        &_title {
+            ul {
+                width: 100%;
+                margin-bottom: 30px;
             }
         }
     }
@@ -1408,32 +1432,33 @@
                 display: flex;
                 justify-content: space-between;
                 .tab_link  {
-                    width: calc(50% - 15px);
+                    width: calc(50% - 10px);
                     margin: 0;
+                    padding: 18px;
                 }
             }
         }
     }
 }
 
-@media screen and (min-width:767px) {
-    .compete {
-        &_content {
-            &_item {
-                padding-left: calc((100vw - 720px) / 2);
-                &_text {
-                    padding-right: calc((100vw - 720px) / 2);
-                }
-                &:nth-child(even) {
-                    padding-right: calc((100vw - 720px) / 2);
-                    &_text {
-                        padding-left: calc((100vw - 720px) / 2);
-                    }
-                }
-            }
-        }
-    }
-}
+// @media screen and (min-width:767px) {
+//     .compete {
+//         &_content {
+//             &_item {
+//                 padding-left: calc((100vw - 720px) / 2);
+//                 .compete_content_item_text {
+//                     padding-right: calc((100vw - 720px) / 2);
+//                 }
+//                 &:nth-child(even) {
+//                     padding-right: calc((100vw - 720px) / 2);
+//                     .compete_content_item_text {
+//                         padding-left: calc((100vw - 720px) / 2);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media screen and (min-width:992px) {
     .compete {
@@ -1445,10 +1470,20 @@
                 }
                 &:nth-child(even) {
                     padding-right: calc((100vw - 960px) / 2);
-                    &_text {
+                    .compete_content_item_text {
                         padding-left: calc((100vw - 960px) / 2);
                     }
                 }
+            }
+        }
+    }
+    .supplier {
+        &_signin {
+            &_tab {
+                padding-left: calc((100vw - 960px) / 2 + 50px);
+            }
+            &_content {
+                padding-right: calc((100vw - 960px) / 2 + 42px);
             }
         }
     }
@@ -1464,10 +1499,20 @@
                 }
                 &:nth-child(even) {
                     padding-right: calc((100vw - 1140px) / 2);
-                    &_text {
+                    .compete_content_item_text {
                         padding-left: calc((100vw - 1140px) / 2);
                     }
                 }
+            }
+        }
+    }
+    .supplier {
+        &_signin {
+            &_tab {
+                padding-left: calc((100vw - 1140px) / 2 + 50px);
+            }
+            &_content {
+                padding-right: calc((100vw - 1140px) / 2 + 42px);
             }
         }
     }
@@ -1483,10 +1528,20 @@
                 }
                 &:nth-child(even) {
                     padding-right: calc((100vw - 1320px) / 2);
-                    &_text {
+                    .compete_content_item_text {
                         padding-left: calc((100vw - 1320px) / 2);
                     }
                 }
+            }
+        }
+    }
+    .supplier {
+        &_signin {
+            &_tab {
+                padding-left: calc((100vw - 1320px) / 2 + 50px);
+            }
+            &_content {
+                padding-right: calc((100vw - 1320px) / 2 + 42px);
             }
         }
     }

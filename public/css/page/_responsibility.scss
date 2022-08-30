@@ -9,7 +9,7 @@
             position: absolute;
             width: 83%;
             background-color: rgba(255,255,255,0.9);
-            padding: 65px 50px;
+            padding: 65px 60px;
             left: 50%;
             bottom: 0;
             transform: translate(-50%,35%);
@@ -17,7 +17,8 @@
                 text-align: center;
                 color: $main-color;
                 font-weight: 600;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
+                font-size: 32px;
             }
             p {
                 color: #6D6D6D;
@@ -25,68 +26,21 @@
                 font-weight: 300;
                 line-height: 1.8;
                 text-align: justify;
+                font-size: 19px;
+                letter-spacing: 0.05em;
             }
         }
     }
 }
 
 .policy-pic {
-    margin: 150px auto;
+    margin: 161px auto;
     display: block;
     max-width: 1200px;
     width: calc(100% - 40px);
 }
 
-.report {
-    &.certify {
-        margin-bottom: 70px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    &_item {
-        padding: 15px 60px;
-        border-bottom: 1px solid #6D6D6D;
-        transition: $common-transition;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        cursor: pointer;
-        &:first-child {
-            border-top: 1px solid #6D6D6D;
-        }
-        &:hover {
-            background-color: #F8F8F8;
-            .report_download {
-                opacity: 1;
-            }
-        }
-        p {
-            margin: 0;
-            width: calc(100% - 30px - 35px);
-            padding: 0 15px;
-            color: #231815;
-            font-size: 18px;
-        }
-    }
-    &_pdf {
-        width: 30px;
-    }
-    &_download {
-        width: 35px;
-        opacity: 0;
-        transition: $common-transition;
-    }
-    &_title {
-        background-color: #F8F8F8;
-        cursor: default;
-        h3 {
-            color: #231815;
-            margin: 0;
-            font-size: 26px;
-        }
-    }
-}
+
 
 @media screen and (max-width:991px) {
     .resp {
@@ -100,20 +54,7 @@
             }
         }
     }
-    .report {
-        &_item {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-        &_download {
-            opacity: 1;
-        }
-        &_title {
-            h3 {
-                font-size: 22px;
-            }
-        }
-    } 
+    
 }
 
 @media screen and (max-width:767px) {
@@ -127,22 +68,7 @@
     .policy-pic {
         margin-top: 200px;
     }
-    .report {
-        &_item {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        p {
-            font-size: 16px;
-            width: calc(100% - 25px - 30px);
-        }
-        &_pdf {
-            width: 25px;
-        }
-        &_download {
-            width: 30px;
-        }
-    }
+    
 }
 
 @media screen and (max-width:575px) {

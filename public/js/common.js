@@ -151,7 +151,7 @@ function stopVideo() {
     player.stopVideo();
 }
 
-var playerHanding,playerRolling;
+var playerHanding;
 function onYouTubeIframeAPIReady() {
     playerHanding = new YT.Player("news_video", {
         videoId: "SgUjftmFB4U",
@@ -168,7 +168,3 @@ function stop() {
 function onPlayer(event) {
     event.target.playVideo();
 }
-
-$(".modal-backdrop").click(function(){
-    playerHanding.stopVideo();
-})

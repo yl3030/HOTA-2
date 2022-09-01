@@ -1,6 +1,6 @@
 <header class="header d-lg-block d-none">
     <div class="container h-100 d-flex align-items-center justify-content-between">
-        <a class="header_logo" href="./index.html"><img src="./public/img/logo.svg" alt=""></a>
+        <a class="header_logo" href="./index.php"><img src="./public/img/logo.svg" alt=""></a>
         <nav class="header_nav d-lg-block d-none">
             <ul class="header_nav_first d-flex">
                 <li class="header_nav_text">

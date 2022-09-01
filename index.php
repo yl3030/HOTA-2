@@ -12,12 +12,12 @@
                   <div class="swiper-slide">
                       <img class="d-sm-block d-none" src="./public/img/banner-2.png" alt="">
                       <img class="d-sm-none d-block" src="./public/img/banner-2-m.png" alt="">
-                      <div class="banner_text">
+                      <div class="banner_text color-white">
                         <div class="container">
                           <h2>核心技術推進宇宙<br>航太科技迎勢啟航</h2>
                           <a class="btn-more" href="aerospace.php">
                               <span>了解更多</span>
-                              <img src="./public/img/icon_arrow-more.svg" alt="">
+                              <img src="./public/img/icon_arrow-more-white.svg" alt="">
                           </a>
                         </div>
                       </div>
@@ -29,6 +29,45 @@
                           <div class="container">
                             <h2>自有機械製造品牌<br>齒輪工藝領先群倫</h2>
                             <a class="btn-more" href="machineTool-list.php">
+                                <span>了解更多</span>
+                                <img src="./public/img/icon_arrow-more.svg" alt="">
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img class="d-sm-block d-none" src="./public/img/banner-3.png" alt="">
+                      <img class="d-sm-none d-block" src="./public/img/banner-3-m.png" alt="">
+                      <div class="banner_text color-white">
+                          <div class="container">
+                            <h2>全球前十大車廠<br>傳動零組件供應商</h2>
+                            <a class="btn-more" href="electric-car.php">
+                                <span>了解更多</span>
+                                <img src="./public/img/icon_arrow-more-white.svg" alt="">
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img class="d-sm-block d-none" src="./public/img/banner-4.png" alt="">
+                      <img class="d-sm-none d-block" src="./public/img/banner-4-m.png" alt="">
+                      <div class="banner_text color-white">
+                          <div class="container">
+                            <h2>精密關鍵零組件<br>傳動系統領導品牌</h2>
+                            <a class="btn-more" href="fuel-car.php">
+                                <span>了解更多</span>
+                                <img src="./public/img/icon_arrow-more-white.svg" alt="">
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img class="d-sm-block d-none" src="./public/img/banner-5.png" alt="">
+                      <img class="d-sm-none d-block" src="./public/img/banner-5-m.png" alt="">
+                      <div class="banner_text">
+                          <div class="container">
+                            <h2>精密關鍵零組件<br>傳動系統領導品牌</h2>
+                            <a class="btn-more" href="agricultural.php">
                                 <span>了解更多</span>
                                 <img src="./public/img/icon_arrow-more.svg" alt="">
                             </a>

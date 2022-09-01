@@ -245,6 +245,30 @@
             </li>
         </ul>
 
+        <ul class="col-lg-3 col-md-4 col-sm-6">
+            <li><h2>人才招募</h2></li>
+            <li>
+                <a href="work.php" target="_blank">
+                    工作機會
+                </a>
+            </li>
+            <li>
+                <a href="work-content.php" target="_blank">
+                    職缺內容
+                </a>
+            </li>
+            <li>
+                <a href="resume.php" target="_blank">
+                    履歷登入
+                </a>
+            </li>
+            <li>
+                <a href="welfare.php" target="_blank">
+                    福利制度
+                </a>
+            </li>
+        </ul>
+
     </div>
     
 </body>

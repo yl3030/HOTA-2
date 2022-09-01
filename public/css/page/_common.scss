@@ -49,6 +49,11 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+input[type=file], /* FF, IE7+, chrome (except button) */
+input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
+    cursor: pointer; 
+}
+
 input {
     border: 1px solid $main-deep;
     height: 50px;
@@ -509,8 +514,8 @@ main {
 @media screen and (max-width:575px) {
     .tab {
         &_link {
-            padding: 13px 30px;
-            font-size: 14px;
+            padding: 15px 30px;
+            // font-size: 14px;
         }
     }
     .breadcrumb {

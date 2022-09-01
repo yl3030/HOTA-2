@@ -41,6 +41,17 @@
             letter-spacing: 0.08em;
             margin-bottom: 50px;
         }
+        &.color-white {
+            h2 {
+                color: #fff;
+            }
+            a {
+                border-color: #fff;
+                span {
+                    color: #fff;
+                }
+            }
+        }
     }
     &_line {
         position: absolute;

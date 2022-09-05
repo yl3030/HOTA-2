@@ -1299,7 +1299,7 @@ main {
   padding-bottom: 56.25%;
 }
 
-.banner .swiper-slide > img {
+.banner .swiper-slide > img, .banner .swiper-slide > video {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1350,6 +1350,18 @@ main {
 
 .banner_text.color-white a span {
   color: #fff;
+}
+
+.banner_text.color-white a:hover span {
+  color: #485563;
+}
+
+.banner_text.color-white a:hover img.hover {
+  opacity: 1;
+}
+
+.banner_text.color-white a:hover img.normal {
+  opacity: 0;
 }
 
 .banner_line {

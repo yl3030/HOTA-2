@@ -55,8 +55,8 @@
             <div class="footer_item">
                 <h4>人才招募</h4>
                 <ul>
-                    <li><a href="">工作機會</a></li>
-                    <li><a href="">福利制度</a></li>
+                    <li><a href="./work.php">工作機會</a></li>
+                    <li><a href="./welfare.php">福利制度</a></li>
                 </ul>
             </div>
             <div class="footer_item">

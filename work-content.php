@@ -86,7 +86,7 @@
             </div>
             <div class="work_content_btn mb-footer d-flex justify-content-sm-center justify-content-between">
                 <a class="btn-back" href="./work.php">返回職缺列表</a>
-                <a class="btn-apply" href="">我要應徵</a>
+                <a class="btn-apply" href="./resume.php">我要應徵</a>
             </div>
         </div>
 

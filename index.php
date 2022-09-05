@@ -17,7 +17,8 @@
                           <h2>核心技術推進宇宙<br>航太科技迎勢啟航</h2>
                           <a class="btn-more" href="aerospace.php">
                               <span>了解更多</span>
-                              <img src="./public/img/icon_arrow-more-white.svg" alt="">
+                              <img class="normal" src="./public/img/icon_arrow-more-white.svg" alt="">
+                              <img class="hover" src="./public/img/icon_arrow-more.svg" alt="">
                           </a>
                         </div>
                       </div>
@@ -43,7 +44,8 @@
                             <h2>全球前十大車廠<br>傳動零組件供應商</h2>
                             <a class="btn-more" href="electric-car.php">
                                 <span>了解更多</span>
-                                <img src="./public/img/icon_arrow-more-white.svg" alt="">
+                                <img class="normal" src="./public/img/icon_arrow-more-white.svg" alt="">
+                                <img class="hover" src="./public/img/icon_arrow-more.svg" alt="">
                             </a>
                           </div>
                       </div>
@@ -56,7 +58,8 @@
                             <h2>精密關鍵零組件<br>傳動系統領導品牌</h2>
                             <a class="btn-more" href="fuel-car.php">
                                 <span>了解更多</span>
-                                <img src="./public/img/icon_arrow-more-white.svg" alt="">
+                                <img class="normal" src="./public/img/icon_arrow-more-white.svg" alt="">
+                                <img class="hover" src="./public/img/icon_arrow-more.svg" alt="">
                             </a>
                           </div>
                       </div>
@@ -74,6 +77,20 @@
                           </div>
                       </div>
                   </div>
+                  <!-- 影片 -->
+                  <!-- <div class="swiper-slide">
+                      <video autoplay loop muted playsinline src="./public/img/videoplayback.mp4"></video>
+                      <div class="banner_text color-white">
+                          <div class="container">
+                            <h2>精密關鍵零組件<br>傳動系統領導品牌</h2>
+                            <a class="btn-more" href="fuel-car.php">
+                                <span>了解更多</span>
+                                <img class="normal" src="./public/img/icon_arrow-more-white.svg" alt="">
+                                <img class="hover" src="./public/img/icon_arrow-more.svg" alt="">
+                            </a>
+                          </div>
+                      </div>
+                  </div> -->
                 </div>     
                 <div class="swiper-pagination"></div>
             </div>

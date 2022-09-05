@@ -962,11 +962,27 @@
                 order: 2;
                 padding-top: 50px;
                 padding-right: 0;
+                display: flex;
+                flex-wrap: wrap;
+                h1 {
+                    width: 100%;
+                    order: 2;
+                    margin-top: 40px;
+                }
+                p {
+                    width: 100%;
+                    order: 3;
+                }
+
             }
             &_right {
                 width: 100%;
                 order: 1;
             }
+        }
+        &Small {
+            order: 1;
+            margin-top: 0;
         }
         &_content {
             p {

@@ -40,7 +40,7 @@
                     <div class="medical_slider_left">
                         <h1>UP-EX1 豪華型</h1>
                         <p class="text-common">『諧和UNISON』是國內豪華電動輪椅品牌，操控靈活、乘坐穩定又安全，搭配軸距延伸及座椅上升功能，提供您最大的使用便利，讓您可輕鬆於室內或室外使用。全系列採用世界大廠控制系統，使用上更安心，另搭載照明燈、煞車燈與方向燈組，提供您更佳的行車安全。</p>
-                        <div class="swiper-container medicalSmall d-lg-block d-none">
+                        <div class="swiper-container medicalSmall">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="medicalSmall_pic">
@@ -71,20 +71,6 @@
                             </div>     
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
-                        </div>
-                        <div class="swiper-container medicalSmall d-lg-none">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="medicalSmall_pic">
-                                        <img src="./public/img/medical-wheelchair1.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="medicalSmall_pic">
-                                        <img src="./public/img/medical-wheelchair2.png" alt="">
-                                    </div>
-                                </div>
-                            </div>     
                         </div>
                     </div>
                </div>

@@ -118,12 +118,12 @@
                         <div class="header_nav_second_content d-flex justify-content-center">
                             <ul>
                                 <li>
-                                    <h4><a href="">工作機會</a></h4>
+                                    <h4><a href="work.php">工作機會</a></h4>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <h4><a href="">福利制度</a></h4>
+                                    <h4><a href="welfare.php">福利制度</a></h4>
                                 </li>
                             </ul>
                         </div>
@@ -298,10 +298,10 @@
             </div>
             <ul class="header_nav-m_dropdown">
                 <li class="header_nav-m_dropdown_item">
-                    <a class="header_nav-m_dropdown_title">工作機會</a>
+                    <a href="work.php" class="header_nav-m_dropdown_title">工作機會</a>
                 </li>
                 <li class="header_nav-m_dropdown_item">
-                    <a class="header_nav-m_dropdown_title">福利制度</a>
+                    <a href="welfare.php" class="header_nav-m_dropdown_title">福利制度</a>
                 </li>
             </ul>
         </li>

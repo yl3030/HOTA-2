@@ -92,7 +92,9 @@
                       </div>
                   </div> -->
                 </div>     
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div>      
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <div class="banner_line">
                 <div class="banner_line_inner"></div>
@@ -263,6 +265,10 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             autoplay: {
                 delay: 3000,

@@ -55,28 +55,28 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="product-list_item">
-                            <a class="product-list_picTool" href="machineTool-content.php">
+                            <a class="product-list_picTool">
                                 <img src="./public/img/tool-4.png" alt="">
                                 <h2>| 伺服壓床</h2>
-                                <div class="product-list_arrow"><img src="./public/img/icon_arrow-more.svg" alt=""></div>
+                                <!-- <div class="product-list_arrow"><img src="./public/img/icon_arrow-more.svg" alt=""></div> -->
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="product-list_item">
-                            <a class="product-list_picTool" href="machineTool-content.php">
+                            <a class="product-list_picTool">
                                 <img src="./public/img/tool-5.png" alt="">
                                 <h2>| 齒輪量測機</h2>
-                                <div class="product-list_arrow"><img src="./public/img/icon_arrow-more.svg" alt=""></div>
+                                <!-- <div class="product-list_arrow"><img src="./public/img/icon_arrow-more.svg" alt=""></div> -->
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="product-list_item">
-                            <a class="product-list_picTool" href="machineTool-content.php">
+                            <a class="product-list_picTool">
                                 <img src="./public/img/tool-6.png" alt="">
                                 <h2>| 自動化整合服務</h2>
-                                <div class="product-list_arrow"><img src="./public/img/icon_arrow-more.svg" alt=""></div>
+                                <!-- <div class="product-list_arrow"><img src="./public/img/icon_arrow-more.svg" alt=""></div> -->
                             </a>
                         </div>
                     </div>

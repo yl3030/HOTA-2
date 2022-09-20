@@ -341,17 +341,17 @@
                 <h2 class="title-content">影片展示</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="medical_video_pic" data-bs-toggle="modal" data-bs-target="#newsModal">
+                        <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-1">
                             <img src="./public/img/news-pic6.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="medical_video_pic" data-bs-toggle="modal" data-bs-target="#newsModal">
+                        <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-2">
                             <img src="./public/img/news-pic6.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="medical_video_pic" data-bs-toggle="modal" data-bs-target="#newsModal">
+                        <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-3">
                             <img src="./public/img/news-pic6.png" alt="">
                         </div>
                     </div>
@@ -365,12 +365,28 @@
 
     <?php include("./include/videoPopup.php") ?>
 
+    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true" onclick="stop()">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="news_videoBox">
+                        <div>
+                            <div id="news_video-1" class="news_video_main"></div>
+                            <div id="news_video-2" class="news_video_main"></div>
+                            <div id="news_video-3" class="news_video_main"></div>
+                        </div>
+                        <p data-bs-dismiss="modal" class="close_btn">close</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <?php include("./include/footer.php") ?>
     <?php include("./include/script.php") ?>
 
     <script>
-
         var swiperSmall = new Swiper(".medicalSmall", {
             slidesPerView: 2,
             spaceBetween: 15,
@@ -394,6 +410,34 @@
                 swiper: swiperSmall,
             },
         })
+
+        var video1, video2, video3;
+        function onYouTubeIframeAPIReady() {
+            video1 = new YT.Player("news_video-1", {
+                videoId: "SgUjftmFB4U",
+                events: {
+                    onReady: stopVideo,
+                },
+            });
+            video2 = new YT.Player("news_video-2", {
+                videoId: "IzVqamf7XhE",
+                events: {
+                    onReady: stopVideo,
+                },
+            });
+            video3 = new YT.Player("news_video-3", {
+                videoId: "cCZ-QTGgcko",
+                events: {
+                    onReady: stopVideo,
+                },
+            });
+        }
+
+        function stop() {
+            video1.stopVideo();
+            video2.stopVideo();
+            video3.stopVideo();
+        }
     </script>
 
 

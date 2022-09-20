@@ -4014,13 +4014,18 @@ main {
   position: relative;
 }
 
-#newsModal .news_videoBox #news_video {
+#newsModal .news_videoBox .news_video_main {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #007934;
   top: 0;
   left: 0;
+  display: none;
+}
+
+#newsModal .news_videoBox .news_video_main.active {
+  display: block;
 }
 
 #newsModal .news_videoBox p {

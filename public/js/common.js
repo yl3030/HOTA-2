@@ -151,20 +151,11 @@ function stopVideo() {
     player.stopVideo();
 }
 
-var playerHanding;
-function onYouTubeIframeAPIReady() {
-    playerHanding = new YT.Player("news_video", {
-        videoId: "SgUjftmFB4U",
-        events: {
-            onReady: stopVideo,
-        },
-    });
-}
-
-function stop() {
-    playerHanding.stopVideo();
-}
-
 function onPlayer(event) {
     event.target.playVideo();
 }
+
+$(".video-item").click(function(){
+    let video = $(this).data("video");
+    $(video).addClass("active").siblings(".news_video_main").removeClass("active");
+})

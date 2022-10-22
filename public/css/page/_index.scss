@@ -5,7 +5,8 @@
         &-slide {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%;
+            // padding-bottom: 56.25%;
+            height: calc(100vh - 100px);
             >img, >video {
                 position: absolute;
                 width: 100%;
@@ -591,8 +592,6 @@
 @media screen and (max-width:991px) {
     .banner {
         &_text {
-            // bottom: 30%;
-            // transform: none;
             .container {
                 max-width: none;
                 padding: 0 20px;
@@ -600,6 +599,11 @@
             h2 {
                 font-size: calc(2rem + 0.9vw);
                 margin-bottom: 35px;
+            }
+        }
+        .swiper {
+            &-slide {
+                height: calc(100vh - 80px);
             }
         }
     }

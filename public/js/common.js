@@ -159,3 +159,12 @@ $(".video-item").click(function(){
     let video = $(this).data("video");
     $(video).addClass("active").siblings(".news_video_main").removeClass("active");
 })
+
+// place
+$(".place_map_pin").click(function(){
+    if($(window).width() < 576){
+        let pin = $(this).data("pin");
+        $(pin).slideDown(300);
+        $(pin).siblings(".place_map_list").slideUp(300);
+    }
+})

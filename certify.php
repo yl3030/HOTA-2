@@ -26,7 +26,97 @@
         <?php include("./include/pageTitle.php") ?>
 
         <div class="mb-footer">
-            <div class="report certify">
+            <div class="container">
+                <div class="certify-table-box">
+                    <table class="certify-table">
+                        <tr class="certify-table_factory">
+                            <td class="certify-table_name"></td>
+                            <td class="certify-table_item">中科廠</td>
+                            <td class="certify-table_item">大里廠</td>
+                            <td class="certify-table_item">嘉義廠</td>
+                            <td class="certify-table_item">嘉義廠</td>
+                            <td class="certify-table_item">嘉義廠</td>
+                            <td class="certify-table_item">嘉義廠</td>
+                            <td class="certify-table_item">嘉義廠</td>
+                            <td class="certify-table_item">嘉義廠</td>
+                            <td class="certify-table_item">嘉義廠</td>
+                        </tr>
+                        <tr class="certify-table_file">
+                            <td class="certify-table_name">AS 9100</td>
+                            <td class="certify-table_item"><a href="" download="中科廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="大里廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                        </tr>
+                        <tr class="certify-table_file">
+                            <td class="certify-table_name">IATF 16949</td>
+                            <td class="certify-table_item"><a href="" download="中科廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="大里廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                        </tr>
+                        <tr class="certify-table_file">
+                            <td class="certify-table_name">ISO 9001</td>
+                            <td class="certify-table_item"><a href="" download="中科廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="大里廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                        </tr>
+                        <tr class="certify-table_file">
+                            <td class="certify-table_name">ISO 14001</td>
+                            <td class="certify-table_item"><a href="" download="中科廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="大里廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                        </tr>
+                        <tr class="certify-table_file">
+                            <td class="certify-table_name">ISO 45001</td>
+                            <td class="certify-table_item"><a href="" download="中科廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="大里廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                        </tr>
+                        <tr class="certify-table_file">
+                            <td class="certify-table_name">ISO 50001</td>
+                            <td class="certify-table_item"><a href="" download="中科廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="大里廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                            <td class="certify-table_item"><a href="" download="嘉義廠"><img src="./public/img/icon-pdf.svg" alt=""></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- <div class="report certify">
                 <div class="container">
                     <div class="report_item report_title">
                         <h3>AS 9100</h3>
@@ -151,9 +241,9 @@
                         <img class="report_download" src="./public/img/icon-download.svg" alt="">
                     </a>
                 </div>
-            </div>
+            </div>-->
 
-            <div class="report certify">
+            <!-- <div class="report certify">
                 <div class="container">
                     <div class="report_item report_title">
                         <h3>TOSHMS(CN 45001)</h3>
@@ -164,7 +254,7 @@
                         <img class="report_download" src="./public/img/icon-download.svg" alt="">
                     </a>
                 </div>
-            </div>
+            </div>  -->
         </div>
 
         <?php include("./include/contact.php") ?>

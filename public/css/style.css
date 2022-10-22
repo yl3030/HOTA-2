@@ -1296,7 +1296,7 @@ main {
 .banner .swiper-slide {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  height: calc(100vh - 100px);
 }
 
 .banner .swiper-slide > img, .banner .swiper-slide > video {
@@ -1951,6 +1951,9 @@ main {
     font-size: calc(2rem + 0.9vw);
     margin-bottom: 35px;
   }
+  .banner .swiper-slide {
+    height: calc(100vh - 80px);
+  }
   .intro .container {
     max-width: none;
     padding: 0 20px;
@@ -2298,6 +2301,45 @@ main {
   display: block;
   max-width: 1200px;
   width: calc(100% - 40px);
+}
+
+.certify-table {
+  width: 100%;
+}
+
+.certify-table tr:first-child td {
+  border-top: 0;
+}
+
+.certify-table tr td {
+  padding: 16px 30px;
+  border-top: 1px solid #6D6D6D;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.certify-table_factory {
+  background-color: #F8F8F8;
+}
+
+.certify-table_name {
+  color: #231815;
+  font-size: 22px;
+  font-weight: 600;
+  width: 200px;
+}
+
+.certify-table_item {
+  color: #231815;
+  font-size: 19px;
+}
+
+.certify-table_item a img {
+  width: 30px;
+}
+
+.certify-table-box {
+  overflow-x: auto;
 }
 
 @media screen and (max-width: 991px) {
@@ -4210,6 +4252,23 @@ main {
   margin-bottom: 0;
 }
 
+.place_map_list-m {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.place_map_list-m .place_map_list {
+  display: none;
+  position: static;
+  -webkit-transform: none;
+          transform: none;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+}
+
 .place_map_intro {
   width: 100%;
 }
@@ -4337,6 +4396,33 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .place_map_pin .pin {
+    width: 12vw;
+  }
+  .place_map_pin.pin-maxico {
+    top: 18vw;
+    left: 14vw;
+  }
+  .place_map_pin.pin-america {
+    top: 10vw;
+    left: 24vw;
+  }
+  .place_map_pin.pin-taiwan {
+    top: 18.5vw;
+    left: 79vw;
+  }
+  .place_map_pin.pin-japan {
+    top: 12.5vw;
+    left: 89.5vw;
+  }
+  .place_map_pin.pin-china {
+    left: 68vw;
+  }
+  .place_map_pin:hover .place_map_list {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
   }
 }
 
@@ -4477,7 +4563,7 @@ main {
   margin-right: 0;
 }
 
-.product-componentList .tab-content .row > div:first-child .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(2) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(3) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(4) .product-componentList_item {
+.product-componentList .tab-content .row > div:first-child .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(2) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(3) .product-componentList_item {
   margin-top: 0;
 }
 
@@ -4569,39 +4655,39 @@ main {
 }
 
 .electricCar .component-2 {
-  top: 45.35vw;
-  left: 29.11vw;
-}
-
-.electricCar .component-2 .component_inner::after {
-  height: 20.3vw;
-}
-
-.electricCar .component-3 {
-  top: 47.74vw;
+  top: 40vw;
   left: 34vw;
 }
 
+.electricCar .component-2 .component_inner::after {
+  height: 15.3vw;
+}
+
+.electricCar .component-3 {
+  top: 41.5vw;
+  left: 37vw;
+}
+
 .electricCar .component-3 .component_inner::after {
-  height: 22.6vw;
+  height: 14.9vw;
 }
 
 .electricCar .component-4 {
-  top: 31.94vw;
-  left: 61.3vw;
+  top: 30.5vw;
+  left: 56vw;
 }
 
 .electricCar .component-4 .component_inner::after {
-  height: 6.9vw;
+  height: 5.4vw;
 }
 
 .electricCar .component-5 {
-  top: 33.13vw;
-  left: 65.96vw;
+  top: 31.5vw;
+  left: 59.5vw;
 }
 
 .electricCar .component-5 .component_inner::after {
-  height: 8vw;
+  height: 6.3vw;
 }
 
 .electricCar .component-pic-1 {
@@ -4617,7 +4703,7 @@ main {
 }
 
 .electricCar_main {
-  width: 65%;
+  width: 45%;
 }
 
 .fuelCar_content {
@@ -4626,30 +4712,30 @@ main {
 }
 
 .fuelCar .component-1 {
-  top: 41.31vw;
-  left: 38.72vw;
+  top: 35.8vw;
+  left: 41.72vw;
 }
 
 .fuelCar .component-1 .component_inner::after {
-  height: 16.5vw;
+  height: 11vw;
 }
 
 .fuelCar .component-2 {
-  top: 38.88vw;
-  left: 45.76vw;
+  top: 34vw;
+  left: 46vw;
 }
 
 .fuelCar .component-2 .component_inner::after {
-  height: 14vw;
+  height: 9.3vw;
 }
 
 .fuelCar .component-3 {
-  top: 36.22vw;
-  left: 56.91vw;
+  top: 32.2vw;
+  left: 54vw;
 }
 
 .fuelCar .component-3 .component_inner::before {
-  height: 7.5vw;
+  height: 6.5vw;
   bottom: 10%;
   left: -2.5vw;
   -webkit-transform: rotate(-57deg);
@@ -4657,28 +4743,28 @@ main {
 }
 
 .fuelCar .component-3 .component_inner::after {
-  height: 8.3vw;
-  bottom: calc(100% + 2.9vw);
-  left: -5.6vw;
+  height: 4.5vw;
+  bottom: calc(100% + 2.75vw);
+  left: -5.2vw;
 }
 
 .fuelCar .component-4 {
-  top: 32.25vw;
-  left: 63.99vw;
+  top: 29vw;
+  left: 59.5vw;
 }
 
 .fuelCar .component-4 .component_inner::before {
-  height: 17vw;
-  bottom: -140%;
-  left: -6vw;
+  height: 10vw;
+  bottom: -87%;
+  left: -3vw;
   -webkit-transform: rotate(-70deg);
           transform: rotate(-70deg);
 }
 
 .fuelCar .component-4 .component_inner::after {
-  height: 3.4vw;
-  bottom: calc(100% + 3.85vw);
-  left: -13.9vw;
+  height: 2vw;
+  bottom: calc(100% + 2vw);
+  left: -7.6vw;
 }
 
 .fuelCar .component-pic-1 {
@@ -4706,7 +4792,7 @@ main {
 }
 
 .fuelCar_main {
-  width: 68%;
+  width: 48%;
 }
 
 .aerospace_content {
@@ -4715,8 +4801,8 @@ main {
 }
 
 .aerospace .component-1 {
-  top: 11.5vw;
-  left: 31.5vw;
+  top: 9.5vw;
+  left: 36.5vw;
 }
 
 .aerospace .component-1 .component_inner::before {
@@ -4729,21 +4815,21 @@ main {
 }
 
 .aerospace .component-1 .component_inner::after {
-  height: 19vw;
+  height: 14vw;
   bottom: inherit;
   top: calc(100% - 0.265vw);
 }
 
 .aerospace .component-2 {
-  top: 25.9vw;
-  left: 74.9vw;
+  top: 19.5vw;
+  left: 67.5vw;
 }
 
 .aerospace .component-2 .component_inner::before {
-  height: 17vw;
+  height: 12vw;
   bottom: inherit;
-  top: -30%;
-  left: -3.5vw;
+  top: -10%;
+  left: -2.5vw;
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
 }
@@ -4752,19 +4838,19 @@ main {
   width: 10vw;
   height: 2px;
   bottom: inherit;
-  top: 14vw;
+  top: 10.2vw;
   left: inherit;
-  right: 7vw;
+  right: 3.7vw;
 }
 
 .aerospace .component-3 {
-  top: 55.21vw;
-  left: 74.9vw;
+  top: 39.5vw;
+  left: 67.5vw;
 }
 
 .aerospace .component-3 .component_inner::before {
   height: 2px;
-  width: 30vw;
+  width: 16.7vw;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -4772,27 +4858,20 @@ main {
   right: calc(100% - 0.265vw);
 }
 
-.aerospace .component-3 .component_inner::after {
-  height: 8vw;
-  bottom: calc(3.125vw / 2);
-  right: 32.7vw;
-  left: inherit;
-}
-
 .aerospace .component-pic-1 {
   width: 20.83vw;
-  top: 30.74vw;
-  left: 35.26vw;
+  top: 25.74vw;
+  left: 31.26vw;
 }
 
 .aerospace .component-pic-2 {
   width: 20.83vw;
-  top: 30.74vw;
-  left: 37vw;
+  top: 24.74vw;
+  left: 34vw;
 }
 
 .aerospace_main {
-  width: 63%;
+  width: 45%;
 }
 
 .motorcycle_content {
@@ -4801,34 +4880,25 @@ main {
 }
 
 .motorcycle_main {
-  width: 63%;
+  width: 45%;
 }
 
 .motorcycle .component-1 {
-  top: 40.5vw;
-  left: 46.5vw;
+  top: 34.6vw;
+  left: 47vw;
 }
 
 .motorcycle .component-1 .component_inner::after {
-  height: 15.8vw;
+  height: 9.8vw;
 }
 
 .motorcycle .component-2 {
-  top: 42.81vw;
+  top: 36.5vw;
   left: 50vw;
 }
 
-.motorcycle .component-2 .component_inner::before {
-  height: 8.3vw;
-  bottom: inherit;
-  top: -18.4vw;
-  left: -0.57vw;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-}
-
 .motorcycle .component-2 .component_inner::after {
-  height: 11vw;
+  height: 11.8vw;
   right: 7vw;
 }
 
@@ -4850,32 +4920,32 @@ main {
 }
 
 .agricultural_main {
-  width: 58%;
+  width: 45%;
 }
 
 .agricultural .component-1 {
-  top: 42.12vw;
-  left: 60.69vw;
+  top: 36.5vw;
+  left: 57.69vw;
 }
 
 .agricultural .component-1 .component_inner::before {
   height: 2px;
   width: 17.5vw;
-  top: calc(3.125vw / 2);
-  left: 2.6vw;
+  top: calc(2.5vw / 2);
+  left: 1.6vw;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .agricultural .component-1 .component_inner::after {
-  height: 18.8vw;
-  left: calc(17.5vw + 2.6vw);
-  bottom: calc((3.125vw / 2) - 2px);
+  height: 10.8vw;
+  left: calc(17.5vw + 1.6vw);
+  bottom: calc((2.5vw / 2) - 1.1px);
 }
 
 .agricultural .component-pic-1 {
   width: 20.83vw;
-  top: 6.87vw;
+  top: 8.87vw;
   left: 69.18vw;
 }
 
@@ -4886,8 +4956,8 @@ main {
 
 .component_inner {
   position: relative;
-  width: 3.125vw;
-  height: 3.125vw;
+  width: 2.5vw;
+  height: 2.5vw;
 }
 
 .component_inner::before {
@@ -4925,13 +4995,13 @@ main {
 }
 
 .component_icon {
-  width: 2.6vw;
-  height: 2.6vw;
+  width: 2.08vw;
+  height: 2.08vw;
 }
 
 .component_icon_dash {
-  width: 3.125vw;
-  height: 3.125vw;
+  width: 2.5vw;
+  height: 2.5vw;
   -webkit-animation: rotate 5s linear infinite;
           animation: rotate 5s linear infinite;
 }
@@ -5494,46 +5564,52 @@ main {
     height: 23vw;
   }
   .electricCar .component-2 {
-    top: 52vw;
+    top: 62vw;
     left: 19vw;
   }
   .electricCar .component-2 .component_inner::after {
-    height: 25.5vw;
+    height: 31.5vw;
   }
   .electricCar .component-3 {
-    top: 55vw;
+    top: 66vw;
     left: 26vw;
   }
   .electricCar .component-3 .component_inner::after {
-    height: 29vw;
+    height: 35vw;
   }
   .electricCar .component-4 {
-    top: 31.94vw;
+    top: 43vw;
     left: 65vw;
   }
   .electricCar .component-4 .component_inner::after {
-    height: 5.5vw;
+    height: 12.5vw;
   }
   .electricCar .component-5 {
-    top: 34vw;
+    top: 45vw;
     left: 73vw;
   }
+  .electricCar .component-5 .component_inner::after {
+    height: 14.5vw;
+  }
   .electricCar .component-pic-1 {
-    width: 78vw;
+    width: 90vw;
     top: 0;
-    left: 11vw;
+    left: 5vw;
   }
   .electricCar .component-pic-2 {
-    width: 76vw;
+    width: 90vw;
     top: 0;
-    left: 12vw;
+    left: 5vw;
+  }
+  .electricCar_content {
+    padding-top: 40vw;
   }
   .fuelCar .component-1 {
     top: 47vw;
     left: 34vw;
   }
   .fuelCar .component-1 .component_inner::after {
-    height: 14vw;
+    height: 13vw;
   }
   .fuelCar .component-2 {
     top: 44vw;
@@ -5547,9 +5623,9 @@ main {
     left: 59vw;
   }
   .fuelCar .component-3 .component_inner::before {
-    height: 7.5vw;
-    bottom: 40%;
-    left: -2.5vw;
+    height: 16.5vw;
+    bottom: 14%;
+    left: -5.5vw;
     -webkit-transform: rotate(-55deg);
             transform: rotate(-55deg);
   }
@@ -5557,6 +5633,7 @@ main {
     height: 6vw;
     bottom: calc(100% + 1.8vw);
     left: -5.3vw;
+    display: none;
   }
   .fuelCar .component-4 {
     top: 36vw;
@@ -5573,26 +5650,27 @@ main {
     height: 3vw;
     bottom: calc(100% - 0.3vw);
     left: -12vw;
+    display: none;
   }
   .fuelCar .component-pic-1 {
-    width: 60.86vw;
-    top: 6.87vw;
-    left: 18.75vw;
+    width: 70vw;
+    top: 3.87vw;
+    left: 5vw;
   }
   .fuelCar .component-pic-2 {
-    width: 60.86vw;
-    top: 6.87vw;
-    left: 18.75vw;
+    width: 70vw;
+    top: 2.87vw;
+    left: 5vw;
   }
   .fuelCar .component-pic-3 {
-    width: 30.44vw;
-    top: 6.83vw;
-    left: 39.58vw;
+    width: 40vw;
+    top: 2.83vw;
+    left: 10vw;
   }
   .fuelCar .component-pic-4 {
-    width: 30.44vw;
+    width: 40vw;
     top: 6.83vw;
-    left: 39.58vw;
+    left: 19.58vw;
   }
   .aerospace .component-1 {
     top: 14vw;
@@ -5611,13 +5689,15 @@ main {
     left: 87.5vw;
   }
   .aerospace .component-2 .component_inner::before {
-    top: 2vw;
+    top: 3.5vw;
+    height: 15.3vw;
+    left: -3vw;
   }
   .aerospace .component-2 .component_inner::after {
-    width: 18.5vw;
+    width: 19.6vw;
     height: 1px;
-    top: 17vw;
-    right: 6.3vw;
+    top: 16.7vw;
+    right: 4.2vw;
   }
   .aerospace .component-3 {
     top: 81vw;
@@ -5625,7 +5705,7 @@ main {
   }
   .aerospace .component-3 .component_inner::before {
     height: 1px;
-    width: 43vw;
+    width: 14vw;
   }
   .aerospace .component-3 .component_inner::after {
     height: 12.5vw;
@@ -5633,37 +5713,35 @@ main {
     right: 49vw;
   }
   .aerospace .component-pic-1 {
-    width: 30.44vw;
+    width: 50vw;
     top: 45vw;
     left: 30vw;
   }
   .aerospace .component-pic-2 {
-    width: 30.44vw;
+    width: 50vw;
     top: 45vw;
-    left: 30vw;
+    left: 10vw;
   }
   .motorcycle .component-1 {
     top: 48.5vw;
     left: 44.5vw;
   }
+  .motorcycle .component-1 .component_inner::after {
+    height: 10.3vw;
+  }
   .motorcycle .component-2 {
     top: 53vw;
   }
-  .motorcycle .component-2 .component_inner::before {
-    height: 7.5vw;
-    top: -20.2vw;
-    left: 1.1vw;
-  }
   .motorcycle .component-2 .component_inner::after {
-    height: 14vw;
+    height: 12vw;
   }
   .motorcycle .component-pic-1 {
-    width: 50.25vw;
+    width: 60vw;
     top: 6.83vw;
-    left: 24.45vw;
+    left: 20vw;
   }
   .motorcycle .component-pic-2 {
-    width: 30.44vw;
+    width: 40vw;
     top: 6.83vw;
     left: 39.58vw;
   }
@@ -5673,19 +5751,20 @@ main {
   }
   .agricultural .component-1 .component_inner::before {
     height: 1px;
-    width: 15vw;
-    top: calc(6.25vw / 2);
-    left: 5.2vw;
+    width: 14vw;
+    bottom: calc(6.25vw - 2px + 17.8vw);
+    top: inherit;
+    left: -10.8vw;
   }
   .agricultural .component-1 .component_inner::after {
-    height: 11.8vw;
-    left: calc(15vw + 5.2vw);
-    bottom: calc((6.25vw / 2));
+    height: 17.8vw;
+    left: calc(6.25vw / 2);
+    bottom: calc((6.25vw - 2px));
   }
   .agricultural .component-pic-1 {
-    width: 30.44vw;
+    width: 40vw;
     top: 6.87vw;
-    left: 65vw;
+    left: 10vw;
   }
   .component_icon {
     width: 5.2vw;

@@ -245,7 +245,8 @@
                 <div class="map_pic_inner">
                     <img data-aos="fade-up" data-aos-duration="1000" src="./public/img/map.svg" alt="">
                     <img class="map_pic_shadow" src="./public/img/map-shadow.png" alt="">
-                    <img src="./public/img/map-pin.svg" alt="">
+                    <img class="d-sm-block d-none" src="./public/img/map-pin.svg" alt="">
+                    <img class="d-sm-none d-block" src="./public/img/map-pin-v2.svg" alt="">
                 </div>
             </div>
             <a href="place.php" class="btn-more btn-more-point mx-auto">

@@ -95,6 +95,19 @@
                     }
                 }
             }
+            &-m {
+                width: 100%;
+                padding: 0 20px;
+                margin-bottom: 50px;
+                .place_map_list {
+                    display: none;
+                    position: static;
+                    transform: none;;
+                    visibility: visible;
+                    opacity: 1;
+                    transition: none;
+                }
+            }
         }
         &_intro {
             width: 100%;
@@ -212,6 +225,39 @@
                     width: 100%;
                     margin: 0 0 10px 0;
                     justify-content: center;
+                }
+            }
+            &_pin {
+                .pin {
+                    width: 12vw;
+                }
+                &.pin {
+                    &-maxico {
+                        top: 18vw;
+                        left: 14vw;
+                    }
+                    &-america {
+                        top: 10vw;
+                        left: 24vw;
+                    }
+                    &-taiwan {
+                        top: 18.5vw;
+                        left: 79vw;
+                    }
+                    &-japan {
+                        top: 12.5vw;
+                        left: 89.5vw;
+                    }
+                    &-china {
+                        left: 68vw;
+                    }
+                }
+                &:hover {
+                    .place_map_list {
+                        opacity: 0;
+                        visibility: hidden;
+                        display: none;
+                    }
                 }
             }
         }

@@ -30,12 +30,12 @@
             <div class="electricCar_content product-box_content">
                 <img class="electricCar_main product-box_main" src="./public/img/electricCar.png" alt="">
 
-                <div class="component component-1" data-target="#component-pic-2">
+                <!-- <div class="component component-1" data-target="#component-pic-2">
                     <div class="component_inner">
                         <img class="component_icon_dash" src="./public/img/icon-dashCircle.svg" alt="">
                         <img class="component_icon" src="./public/img/icon-plus_1.svg" alt="">
                     </div>
-                </div>
+                </div> -->
                 <div class="component component-2" data-target="#component-pic-1">
                     <div class="component_inner">
                         <img class="component_icon_dash" src="./public/img/icon-dashCircle.svg" alt="">
@@ -78,7 +78,7 @@
                     <div class="tab-content pb-footer" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="gear" role="tabpanel" aria-labelledby="gear-tab">
                             <div class="row">
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-3.png" alt=""></div>
                                         <div class="text d-flex">
@@ -87,7 +87,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-2.png" alt=""></div>
                                         <div class="text d-flex">
@@ -96,7 +96,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -105,7 +105,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic2.svg" alt=""></div>
                                         <div class="text d-flex">
@@ -114,7 +114,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -123,7 +123,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/car-pic.png" alt=""></div>
                                         <div class="text d-flex">
@@ -132,7 +132,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/banner-2.png" alt=""></div>
                                         <div class="text d-flex">
@@ -141,7 +141,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/banner-1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -150,7 +150,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/noproduct.png" alt=""></div>
                                         <div class="text d-flex">
@@ -163,7 +163,7 @@
                         </div>
                         <div class="tab-pane fade" id="differential" role="tabpanel" aria-labelledby="differential-tab">
                             <div class="row">
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-3.png" alt=""></div>
                                         <div class="text d-flex">
@@ -172,7 +172,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-2.png" alt=""></div>
                                         <div class="text d-flex">
@@ -181,7 +181,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -190,7 +190,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic2.svg" alt=""></div>
                                         <div class="text d-flex">
@@ -199,7 +199,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -208,7 +208,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/car-pic.png" alt=""></div>
                                         <div class="text d-flex">
@@ -217,7 +217,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/banner-2.png" alt=""></div>
                                         <div class="text d-flex">
@@ -226,7 +226,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/banner-1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -235,7 +235,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/noproduct.png" alt=""></div>
                                         <div class="text d-flex">
@@ -248,7 +248,7 @@
                         </div>
                         <div class="tab-pane fade" id="axis" role="tabpanel" aria-labelledby="axis-tab">
                             <div class="row">
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-3.png" alt=""></div>
                                         <div class="text d-flex">
@@ -257,7 +257,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-2.png" alt=""></div>
                                         <div class="text d-flex">
@@ -266,7 +266,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -275,7 +275,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic2.svg" alt=""></div>
                                         <div class="text d-flex">
@@ -284,7 +284,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -293,7 +293,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/car-pic.png" alt=""></div>
                                         <div class="text d-flex">
@@ -302,7 +302,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/banner-2.png" alt=""></div>
                                         <div class="text d-flex">
@@ -311,7 +311,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/banner-1.png" alt=""></div>
                                         <div class="text d-flex">
@@ -320,7 +320,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <div class="col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/noproduct.png" alt=""></div>
                                         <div class="text d-flex">

@@ -32,7 +32,7 @@
     
             <div class="place_map">
                 <img class="place_map_bg" src="./public/img/map.svg" alt="" data-aos="fade-up" data-aos-duration="800">
-                <div class="place_map_pin pin-america">
+                <div class="place_map_pin pin-america" data-pin="#list-america">
                     <img class="pin-shadow" src="./public/img/shadow.png" alt="">
                     <img class="pin" src="./public/img/pin-america.svg" alt="">
                     <div class="place_map_list">
@@ -49,7 +49,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="place_map_pin pin-maxico">
+                <div class="place_map_pin pin-maxico" data-pin="#list-maxico">
                     <img class="pin-shadow" src="./public/img/shadow.png" alt="">
                     <img class="pin" src="./public/img/pin-maxico.svg" alt="">
                     <div class="place_map_list">
@@ -61,7 +61,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="place_map_pin pin-china">
+                <div class="place_map_pin pin-china" data-pin="#list-china">
                     <img class="pin-shadow" src="./public/img/shadow.png" alt="">
                     <img class="pin" src="./public/img/pin-china.svg" alt="">
                     <div class="place_map_list">
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="place_map_pin pin-japan">
+                <div class="place_map_pin pin-japan" data-pin="#list-japan">
                     <img class="pin-shadow" src="./public/img/shadow.png" alt="">
                     <img class="pin" src="./public/img/pin-japan.svg" alt="">
                     <div class="place_map_list">
@@ -87,10 +87,77 @@
                         </ul>
                     </div>
                 </div>
-                <div class="place_map_pin pin-taiwan">
+                <div class="place_map_pin pin-taiwan" data-pin="#list-taiwan">
                     <img class="pin-shadow" src="./public/img/shadow.png" alt="">
                     <img class="pin" src="./public/img/pin-taiwan.svg" alt="">
                     <div class="place_map_list">
+                        <ul>
+                            <li>
+                                <span>中科廠</span>
+                                <img src="./public/img/icon-person.svg" alt="">
+                                <img src="./public/img/icon-repair.svg" alt="">
+                                <img src="./public/img/icon-gear.svg" alt="">
+                            </li>
+                            <li>
+                                <span>大里廠</span>
+                                <img src="./public/img/icon-gear.svg" alt="">
+                            </li>
+                            <li>
+                                <span>大埔美一廠</span>
+                                <img src="./public/img/icon-gear.svg" alt="">
+                            </li>
+                            <li>
+                                <span>大埔美二廠</span>
+                                <img src="./public/img/icon-gear.svg" alt="">
+                            </li>
+                            <li>
+                                <span>大埔美三廠</span>
+                                <img src="./public/img/icon-gear.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="place_map_list-m d-sm-none d-block">
+                    <div class="place_map_list" id="list-america">
+                        <ul>
+                            <li>
+                            <span>洛杉磯 辦事處</span>
+                                <img src="./public/img/icon-person.svg" alt="">
+                                <img src="./public/img/icon-earth.svg" alt="">
+                            </li>
+                            <li>
+                                <span>底特律 辦事處</span>
+                                <img src="./public/img/icon-earth.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="place_map_list" id="list-maxico">
+                        <ul>
+                            <li>
+                                <span>蒙特雷 辦事處</span>
+                                <img src="./public/img/icon-earth.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="place_map_list" id="list-china">
+                        <ul>
+                            <li>
+                                <span>淮安 辦事處</span>
+                                <img src="./public/img/icon-person.svg" alt="">
+                                <img src="./public/img/icon-repair.svg" alt="">
+                                <img src="./public/img/icon-gear.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="place_map_list" id="list-japan">
+                        <ul>
+                            <li>
+                                <span>大阪 辦事處</span>
+                                <img src="./public/img/icon-person.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="place_map_list" id="list-taiwan">
                         <ul>
                             <li>
                                 <span>中科廠</span>

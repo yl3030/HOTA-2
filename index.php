@@ -104,6 +104,8 @@
             </div>
         </div>
         <div class="intro">
+            <img class="intro_bg d-md-block d-none" src="./public/img/intro-homepic.png" alt="">
+            <img class="intro_bg d-md-none d-block" src="./public/img/intro-homepic-m.png" alt="">
             <div class="intro_text">
                 <div class="container">
                     <div class="intro_text_inner">

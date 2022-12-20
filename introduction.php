@@ -106,7 +106,7 @@
                             </div>
                           </div>
                           <div class="swiper-slide">
-                            <div class="history_point" data-target="#history_content1960">
+                            <div class="history_point last" data-target="#history_content1960">
                                 <div class="history_point_circle">
                                     <div class="history_point_circle_inner"></div>
                                 </div>

@@ -149,7 +149,7 @@
             transform: translateY(-50%);
             z-index: -1;
         }
-        &[data-target="#history_content1960"] {
+        &.last {
             &::after {
                 width: calc(100% - 50px);
                 @media screen and (max-width: 991px) {

@@ -145,9 +145,17 @@
             height: 1px;
             background-color: $fifth-color;
             top: 50%;
-            left: 0;
+            left: 2%;
             transform: translateY(-50%);
             z-index: -1;
+        }
+        &[data-target="#history_content1960"] {
+            &::after {
+                width: calc(100% - 50px);
+                @media screen and (max-width: 991px) {
+                    width: calc(100% - 30px);
+                }
+            }
         }
         &.active {
             .history_point {

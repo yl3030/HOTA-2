@@ -2567,10 +2567,20 @@ main {
   height: 1px;
   background-color: #3B4854;
   top: 50%;
-  left: 0;
+  left: 2%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: -1;
+}
+
+.history_point[data-target="#history_content1960"]::after {
+  width: calc(100% - 50px);
+}
+
+@media screen and (max-width: 991px) {
+  .history_point[data-target="#history_content1960"]::after {
+    width: calc(100% - 30px);
+  }
 }
 
 .history_point.active .history_point_circle {

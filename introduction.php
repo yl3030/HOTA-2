@@ -416,9 +416,9 @@
             }
         })
         swiper.on('click',function(){
-            console.log('click!');
+            // console.log('click!');
             let year = $(this).find(".history_point").data("target");
-            console.log(year);
+            // console.log(year);
         })
 
         // $(".history_point").click(function(){

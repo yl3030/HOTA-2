@@ -19,11 +19,11 @@ $(".header_lang_active").click(function(){
 $(document).click(function(event){
     let area = $(".header_nav_icon");
     if(!area.is(event.target)&&area.has(event.target).length===0){
-        $(this).find(".header_nav_second").slideUp(500);
+        $(".iconDrop").slideUp(500);
     }
     let area_lang = $(".header_lang");
     if(!area_lang.is(event.target)&&area_lang.has(event.target).length===0){
-        $(this).find(".header_lang_dropdown").slideUp(300);
+        $(".header_lang_dropdown").slideUp(300);
     }
 })
 
@@ -98,7 +98,9 @@ $(".product-componentList_item").click(function(){
     $(".componentModal_pic").children("img").attr("src",pic);
     componentIndex = $(this).parents(".tab-pane").find(".product-componentList_item").index(this);
     
-    console.log(componentIndex);
+    let source = $(this).parents(".tab-pane").data("id");
+    $("#componentModal").data("source",source);
+    // console.log(source);
 
     let picName = $(this).find(".product-componentList_name").text();
     $(".componentModal_name").text(picName);
@@ -106,7 +108,9 @@ $(".product-componentList_item").click(function(){
 
 
 $(".componentModal_arrow").click(function(){
-    let componentLength = $(".product-componentList_item").length - 1;
+    let modalSource = $(this).parents("#componentModal").data("source");
+    let componentLength = $(modalSource).find(".product-componentList_item").length - 1;
+    console.log("modalSource=" + modalSource + ",componentLength=" + componentLength);
     if($(this).hasClass("prev")){
         if (componentIndex>0){
             componentIndex = componentIndex - 1;
@@ -120,8 +124,8 @@ $(".componentModal_arrow").click(function(){
             componentIndex = 0;
         }
     }
-    let modalSRC = $(".product-componentList_item").eq(componentIndex).find(".product-componentList_pic").children("img").attr("src");
-    let modalName =  $(".product-componentList_item").eq(componentIndex).find(".product-componentList_name").text();
+    let modalSRC = $(modalSource).find(".product-componentList_item").eq(componentIndex).find(".product-componentList_pic").children("img").attr("src");
+    let modalName =  $(modalSource).find(".product-componentList_item").eq(componentIndex).find(".product-componentList_name").text();
     $(".componentModal_pic").children("img").attr("src", modalSRC);
     $(".componentModal_name").text(modalName);
 })

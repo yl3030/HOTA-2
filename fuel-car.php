@@ -73,7 +73,7 @@
             <div class="product-componentList_tabContent">
                 <div class="container">
                     <div class="tab-content pb-footer" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="gearBox" role="tabpanel" aria-labelledby="gearBox-tab">
+                        <div class="tab-pane fade show active" data-id="#gearBox" id="gearBox" role="tabpanel" aria-labelledby="gearBox-tab">
                             <div class="row">
                                 <div class="col-lg-3 col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
@@ -158,9 +158,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="torque" role="tabpanel" aria-labelledby="torque-tab">
+                        <div class="tab-pane fade" data-id="#torque" id="torque" role="tabpanel" aria-labelledby="torque-tab">
                             <div class="row">
-                                <div class="col-lg-3 col-md-4 col-6">
+                                <!-- <div class="col-lg-3 col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-3.png" alt=""></div>
                                         <div class="text d-flex">
@@ -168,13 +168,13 @@
                                             <span class="product-componentList_name">零件名稱1</span>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="col-lg-3 col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-2.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱2</span>
+                                            <span class="product-componentList_name">零件名稱2-2</span>
                                         </div>
                                     </div>
                                 </div>
@@ -183,7 +183,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/compete-1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱3</span>
+                                            <span class="product-componentList_name">零件名稱2-3</span>
                                         </div>
                                     </div>
                                 </div>
@@ -192,7 +192,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic2.svg" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱4</span>
+                                            <span class="product-componentList_name">零件名稱2-4</span>
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +201,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱5</span>
+                                            <span class="product-componentList_name">零件名稱2-5</span>
                                         </div>
                                     </div>
                                 </div>
@@ -210,7 +210,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/car-pic.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱6</span>
+                                            <span class="product-componentList_name">零件名稱2-6</span>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/banner-2.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱7</span>
+                                            <span class="product-componentList_name">零件名稱2-7</span>
                                         </div>
                                     </div>
                                 </div>
@@ -228,7 +228,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/banner-1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱8</span>
+                                            <span class="product-componentList_name">零件名稱2-8</span>
                                         </div>
                                     </div>
                                 </div>
@@ -237,20 +237,20 @@
                                         <div class="product-componentList_pic"><img src="./public/img/noproduct.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱9</span>
+                                            <span class="product-componentList_name">零件名稱2-9</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="transmission" role="tabpanel" aria-labelledby="transmission-tab">
+                        <div class="tab-pane fade" data-id="#transmission" id="transmission" role="tabpanel" aria-labelledby="transmission-tab">
                             <div class="row">
                                 <div class="col-lg-3 col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-3.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱1</span>
+                                            <span class="product-componentList_name">零件名稱3-1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -259,7 +259,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/compete-2.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱2</span>
+                                            <span class="product-componentList_name">零件名稱3-2</span>
                                         </div>
                                     </div>
                                 </div>
@@ -268,7 +268,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/compete-1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱3</span>
+                                            <span class="product-componentList_name">零件名稱3-3</span>
                                         </div>
                                     </div>
                                 </div>
@@ -277,7 +277,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic2.svg" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱4</span>
+                                            <span class="product-componentList_name">零件名稱3-4</span>
                                         </div>
                                     </div>
                                 </div>
@@ -286,7 +286,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱5</span>
+                                            <span class="product-componentList_name">零件名稱3-5</span>
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +295,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/car-pic.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱6</span>
+                                            <span class="product-componentList_name">零件名稱3-6</span>
                                         </div>
                                     </div>
                                 </div>
@@ -304,7 +304,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/banner-2.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱7</span>
+                                            <span class="product-componentList_name">零件名稱3-7</span>
                                         </div>
                                     </div>
                                 </div>
@@ -313,7 +313,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/banner-1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱8</span>
+                                            <span class="product-componentList_name">零件名稱3-8</span>
                                         </div>
                                     </div>
                                 </div>
@@ -322,20 +322,20 @@
                                         <div class="product-componentList_pic"><img src="./public/img/noproduct.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱9</span>
+                                            <span class="product-componentList_name">零件名稱3-9</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="differential" role="tabpanel" aria-labelledby="differential-tab">
+                        <div class="tab-pane fade" data-id="#differential" id="differential" role="tabpanel" aria-labelledby="differential-tab">
                             <div class="row">
                                 <div class="col-lg-3 col-md-4 col-6">
                                     <div class="product-componentList_item" data-bs-toggle="modal" data-bs-target="#componentModal">
                                         <div class="product-componentList_pic"><img src="./public/img/compete-3.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱1</span>
+                                            <span class="product-componentList_name">零件名稱4-1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -344,7 +344,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/compete-2.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱2</span>
+                                            <span class="product-componentList_name">零件名稱4-2</span>
                                         </div>
                                     </div>
                                 </div>
@@ -353,7 +353,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/compete-1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱3</span>
+                                            <span class="product-componentList_name">零件名稱4-3</span>
                                         </div>
                                     </div>
                                 </div>
@@ -362,7 +362,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic2.svg" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱4</span>
+                                            <span class="product-componentList_name">零件名稱4-4</span>
                                         </div>
                                     </div>
                                 </div>
@@ -371,7 +371,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/commitee-pic1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱5</span>
+                                            <span class="product-componentList_name">零件名稱4-5</span>
                                         </div>
                                     </div>
                                 </div>
@@ -380,7 +380,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/car-pic.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱6</span>
+                                            <span class="product-componentList_name">零件名稱4-6</span>
                                         </div>
                                     </div>
                                 </div>
@@ -389,7 +389,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/banner-2.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱7</span>
+                                            <span class="product-componentList_name">零件名稱4-7</span>
                                         </div>
                                     </div>
                                 </div>
@@ -398,7 +398,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/banner-1.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱8</span>
+                                            <span class="product-componentList_name">零件名稱4-8</span>
                                         </div>
                                     </div>
                                 </div>
@@ -407,7 +407,7 @@
                                         <div class="product-componentList_pic"><img src="./public/img/noproduct.png" alt=""></div>
                                         <div class="text d-flex">
                                             <img src="./public/img/arrow-lightgreen-right.svg" alt="">
-                                            <span class="product-componentList_name">零件名稱9</span>
+                                            <span class="product-componentList_name">零件名稱4-9</span>
                                         </div>
                                     </div>
                                 </div>

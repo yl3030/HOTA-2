@@ -2281,7 +2281,7 @@ main {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 65px 60px;
   left: 50%;
-  bottom: 0;
+  bottom: 22%;
   -webkit-transform: translate(-50%, 35%);
           transform: translate(-50%, 35%);
 }
@@ -2777,7 +2777,7 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-.enterprise_item a:hover {
+.enterprise_item a[href]:hover {
   color: #007934 !important;
 }
 
@@ -4571,7 +4571,7 @@ main {
   margin-right: 0;
 }
 
-.product-componentList .tab-content .row > div:first-child .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(2) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(3) .product-componentList_item {
+.product-componentList .tab-content .row > div:first-child .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(2) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(3) .product-componentList_item, .product-componentList .tab-content .row > div:nth-child(4) .product-componentList_item {
   margin-top: 0;
 }
 

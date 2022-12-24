@@ -217,6 +217,12 @@ main {
             top: 100%;
             transform: translateX(-50%);
         }
+        &_second {
+            text-align: center;
+            font-size: 30px;
+            color: $main-color;
+            margin-bottom: 33px;
+        }
     }
     &-content {
         text-align: center;

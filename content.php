@@ -101,6 +101,11 @@
                     高和春貴慈善基金會
                 </a>
             </li>
+            <li>
+                <a href="esg.php" target="_blank">
+                    ESG願景與政策目標
+                </a>
+            </li>
         </ul>
 
         <ul class="col-lg-3 col-md-4 col-sm-6">

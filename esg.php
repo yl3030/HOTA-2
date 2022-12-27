@@ -41,6 +41,187 @@
                 和大集團訂出環境保護、社會責任與公司治理/經濟之三大永續主軸，展開符合SDGs八項指標、六大具體政策作為企業永續發展藍圖，除關注國內外相關企業社會責任準則及全球環境氣候變遷等議題，也省思、改善因應制度與成效，以回應全球日益關切的環境議題與社會共融趨勢，務實達成永續政策之短中長程目標。
                 </p>
             </div>
+                <div class="esg_round">
+                    <div class="esg_round_inner">
+                        <div class="esg_round_envi esg_round_item" id="round-environment"></div>
+                        <div class="esg_round_soci esg_round_item" id="round-social"></div>
+                        <div class="esg_round_comp esg_round_item" id="round-company"></div>
+                        <div class="esg_round_title esg_round_item">
+                            <div class="esg_round_title_text">
+                                <h4>ESG</h4>
+                                <p>
+                                    Six<br>
+                                    major<br>
+                                    policies
+                                </p>
+                            </div>
+                        </div>
+                        <div class="esg_round_icon">
+                            <div class="esg_round_icon_img" style="--i:2">
+                                <img style="--i:-2" src="./public/img/round_icon-1.svg" alt="">
+                            </div>
+                            <div class="esg_round_icon_img" style="--i:3">
+                                <img style="--i:-3" src="./public/img/round_icon-2.svg" alt="">
+                            </div>
+                            <div class="esg_round_icon_img" style="--i:4">
+                                <img style="--i:-4" src="./public/img/round_icon-3.svg" alt="">
+                            </div>
+                            <div class="esg_round_icon_img" style="--i:5">
+                                <img style="--i:-5" src="./public/img/round_icon-4.svg" alt="">
+                            </div>
+                            <div class="esg_round_icon_img" style="--i:6">
+                                <img style="--i:-6" src="./public/img/round_icon-5.svg" alt="">
+                            </div>
+                            <div class="esg_round_icon_img" style="--i:7">
+                                <img style="--i:-7" src="./public/img/round_icon-6.svg" alt="">
+                            </div>
+                            <div class="esg_round_icon_img" style="--i:8">
+                                <img style="--i:-8" src="./public/img/round_icon-7.svg" alt="">
+                            </div>
+                            <div class="esg_round_icon_img" style="--i:1">
+                                <img style="--i:-1" src="./public/img/round_icon-8.svg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="esg_round_text d-lg-block d-none">
+                            <div class="esg_round_text_item esg_round_text_envi">
+                                <img class="esg_round_text_line" src="./public/img/esg-line-environment.svg" alt="">
+                                <div class="esg_round_text_inner">
+                                    <h5 class="esg_round_text_title" data-round="#round-environment"><span class="highlight">環境</span>保護</h5>
+                                    <ul>
+                                        <li>
+                                            <h6>●綠能企業</h6>
+                                            <p>
+                                                持續淨零減碳,落實綠電環保<br>
+                                                執行技術轉型,推動綠能製造
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h6>●循環經濟</h6>
+                                            <p>
+                                                提升資源使用率,增進循環經濟
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="esg_round_text_item esg_round_text_soci">
+                                <img class="esg_round_text_line" src="./public/img/esg-line-social.svg" alt="">
+                                <div class="esg_round_text_inner">
+                                    <h5 class="esg_round_text_title" data-round="#round-social"><span class="highlight">社會</span>責任</h5>
+                                    <ul>
+                                        <li>
+                                            <h6>●和大永續</h6>
+                                            <p>
+                                                優化供應體系,夥伴永續共好<br>
+                                                創造股東獲利,保障企業營運
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h6>●和大治理</h6>
+                                            <p>
+                                                參與工商團體,促進產業升級<br>
+                                                結合客戶需求,強化競爭優勢
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="esg_round_text_item esg_round_text_comp">
+                                <img class="esg_round_text_line" src="./public/img/esg-line-company.svg" alt="">
+                                <div class="esg_round_text_inner">
+                                    <h5 class="esg_round_text_title" data-round="#round-company"><span class="highlight">公司</span>治理</h5>
+                                    <ul>
+                                        <li>
+                                            <h6>●良善環境</h6>
+                                            <p>
+                                                照顧同仁福祉,營造友善職場<br>
+                                                強化工安環保,消除職災事故
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h6>●共好共榮</h6>
+                                            <p>
+                                                致力社會和諧,推廣公益事務<br>
+                                                慈善公益實踐,履行社會責任
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <div class="esg_round_text d-lg-none row">
+                            <div class="col-sm-4 esg_round_text_item esg_round_text_envi">
+                                <img class="esg_round_text_line" src="./public/img/esg-line-environment.svg" alt="">
+                                <div class="esg_round_text_inner">
+                                    <h5 class="esg_round_text_title" data-round="#round-environment"><span class="highlight">環境</span>保護</h5>
+                                    <ul>
+                                        <li>
+                                            <h6>●綠能企業</h6>
+                                            <p>
+                                                持續淨零減碳,落實綠電環保<br>
+                                                執行技術轉型,推動綠能製造
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h6>●循環經濟</h6>
+                                            <p>
+                                                提升資源使用率,增進循環經濟
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 esg_round_text_item esg_round_text_soci">
+                                <img class="esg_round_text_line" src="./public/img/esg-line-social.svg" alt="">
+                                <div class="esg_round_text_inner">
+                                    <h5 class="esg_round_text_title" data-round="#round-social"><span class="highlight">社會</span>責任</h5>
+                                    <ul>
+                                        <li>
+                                            <h6>●和大永續</h6>
+                                            <p>
+                                                優化供應體系,夥伴永續共好<br>
+                                                創造股東獲利,保障企業營運
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h6>●和大治理</h6>
+                                            <p>
+                                                參與工商團體,促進產業升級<br>
+                                                結合客戶需求,強化競爭優勢
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 esg_round_text_item esg_round_text_comp">
+                                <img class="esg_round_text_line" src="./public/img/esg-line-company.svg" alt="">
+                                <div class="esg_round_text_inner">
+                                    <h5 class="esg_round_text_title" data-round="#round-company"><span class="highlight">公司</span>治理</h5>
+                                    <ul>
+                                        <li>
+                                            <h6>●良善環境</h6>
+                                            <p>
+                                                照顧同仁福祉,營造友善職場<br>
+                                                強化工安環保,消除職災事故
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h6>●共好共榮</h6>
+                                            <p>
+                                                致力社會和諧,推廣公益事務<br>
+                                                慈善公益實踐,履行社會責任
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
         </div>
         <div class="esg_content esg_target">
             <div class="container">
@@ -49,12 +230,61 @@
                     <div class="swiper-container esg_target_slider">   
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
+
+                            <!-- <div class="swiper-slide">
+                                <div class="d-flex flex-wrap esg_target_bg mena">
+                                    <div class="esg_target_left">
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="esg_target_right d-flex flex-wrap">
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4>0件</h4>
+                                                <p>
+                                                    重大違法事項
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4>1:1</h4>
+                                                <p>
+                                                    相同職位男女同仁基本薪酬比
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4><span id="menaNum-1">100</span>%</h4>
+                                                <p>
+                                                    供應鏈道德規範暨法遵教育<br>
+                                                    （含營業秘密保護）<br>
+                                                    宣導達成率
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4>≥<span id="menaNum-2">100</span>億</h4>
+                                                <p>
+                                                    2026年合併營收<br>
+                                                    2021年較2020年成長22.06%
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
                             <div class="swiper-slide">
                                 <div class="d-flex flex-wrap esg_target_bg envi">
                                     <div class="esg_target_left">
                                         <div class="inner">
                                             <div class="esg_target_text">
-                                                <h4>▲ 30％</h4>
+                                                <h4>▲ <span id="enviNum-1">30</span>％</h4>
                                                 <p>
                                                 水資源使用率<span class="highlight">提升30%</span><br>
                                                 降低耗用自來水量<br>
@@ -66,7 +296,7 @@
                                     <div class="esg_target_right d-flex flex-wrap">
                                         <div class="inner">
                                             <div class="esg_target_text">
-                                                <h4>≥ 60％</h4>
+                                                <h4>≥ <span id="enviNum-2">60</span>％</h4>
                                                 <p>
                                                 廢棄物資源回用比例
                                                 </p>
@@ -82,7 +312,7 @@
                                         </div>
                                         <div class="inner">
                                             <div class="esg_target_text">
-                                                <h4>30噸</h4>
+                                                <h4><span id="enviNum-3">30</span>噸</h4>
                                                 <p>
                                                 資源循環量
                                                 </p>
@@ -120,7 +350,7 @@
                                         </div>
                                         <div class="inner">
                                             <div class="esg_target_text">
-                                                <h4>8場/年</h4>
+                                                <h4><span id="sociNum-1">8</span>場/年</h4>
                                                 <p>
                                                     辦理員工諮詢或<br>紓壓健康促進活動
                                                 </p>
@@ -128,7 +358,7 @@
                                         </div>
                                         <div class="inner">
                                             <div class="esg_target_text">
-                                                <h4>20人/年</h4>
+                                                <h4><span id="sociNum-2">20</span>人/年</h4>
                                                 <p>
                                                     媒合產學合作人才數
                                                 </p>
@@ -136,7 +366,7 @@
                                         </div>
                                         <div class="inner">
                                             <div class="esg_target_text">
-                                                <h4>公益捐贈858仟元</h4>
+                                                <h4>公益捐贈<span id="sociNum-3">858</span>仟元</h4>
                                                 <p>2021年社會支出含公益捐贈</p>
                                             </div>
                                         </div>
@@ -171,7 +401,7 @@
                                         </div>
                                         <div class="inner">
                                             <div class="esg_target_text">
-                                                <h4>100%</h4>
+                                                <h4><span id="menaNum-1">100</span>%</h4>
                                                 <p>
                                                     供應鏈道德規範暨法遵教育<br>
                                                     （含營業秘密保護）<br>
@@ -181,7 +411,7 @@
                                         </div>
                                         <div class="inner">
                                             <div class="esg_target_text">
-                                                <h4>≥100億</h4>
+                                                <h4>≥<span id="menaNum-2">100</span>億</h4>
                                                 <p>
                                                     2026年合併營收<br>
                                                     2021年較2020年成長22.06%
@@ -556,12 +786,82 @@
     <?php include("./include/script.php") ?>
 
     <script>
+        $(".esg_round_text_title").click(function(){
+            let round = $(this).data("round");
+            // $(this).parents(".esg_round_text_inner").find("ul").slideDown(300);
+            $(this).parents(".esg_round_text_item").addClass("active");
+            $(this).parents(".esg_round_text_item").siblings(".esg_round_text_item").removeClass("active");
+            // $(this).parents(".esg_round_text_item").siblings(".esg_round_text_item").find("ul").slideUp(300);
+            $(round).addClass("active");
+            $(round).siblings(".esg_round_item").removeClass("active");
+        })
+        $(document).click(function (event) {
+            var roundTitle = $(".esg_round_inner");
+            if (!roundTitle.is(event.target) && roundTitle.has(event.target).length === 0) {
+                $(".esg_round_text_inner").each(function(){
+                    // $(this).find("ul").slideUp(300);
+                    $(".esg_round_text_item").removeClass("active");
+                    $(".esg_round_item").removeClass("active");
+                })
+            }
+        });
+        var envi_1={
+            smartEasingAmount:20,
+        }
+        var envi_2={
+            smartEasingAmount:50,
+        }
+        var envi_3={
+            smartEasingAmount:20,
+        }
+        var soci_1={
+            smartEasingAmount:4,
+        }
+        var soci_2={
+            smartEasingAmount:10,
+        }
+        var m_1={
+            startVal: 90,
+            smartEasingAmount:10,
+        }
+        var m_2={
+            startVal: 90,
+            smartEasingAmount:10,
+        }
+        var soci_3={
+            startVal: 800,
+            smartEasingAmount:860,
+        }
+        new Waypoint({
+            element: document.querySelector(".esg_target_slider"),
+            handler: function () {
+                var numAnimM1 = new countUp.CountUp('menaNum-1', 100,m_1);
+                numAnimM1.start();
+                var numAnimM2 = new countUp.CountUp('menaNum-2', 100,m_2);
+                numAnimM2.start();
+                var numAnimEnvi1 = new countUp.CountUp('enviNum-1', 30,envi_1);
+                numAnimEnvi1.start();
+                var numAnimEnvi2 = new countUp.CountUp('enviNum-2', 60,envi_2);
+                numAnimEnvi2.start();
+                var numAnimEnvi3 = new countUp.CountUp('enviNum-3', 30,envi_3);
+                numAnimEnvi3.start();
+                var numAnimSoci1 = new countUp.CountUp('sociNum-1', 8,soci_1);
+                numAnimSoci1.start();
+                var numAnimSoci2 = new countUp.CountUp('sociNum-2', 20,soci_2);
+                numAnimSoci2.start();
+                var numAnimSoci3 = new countUp.CountUp('sociNum-3', 858,soci_3);
+                numAnimSoci3.start();
+            },
+            offset: '40%',
+        });
         var swiper = new Swiper(".esg_target_slider", {
             slidesPerView: 1,
             navigation: {
                 nextEl: ".esg_target_next",
                 prevEl: ".esg_target_prev",
             },
+            observeParents:true,
+            observer:true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -613,6 +913,7 @@
                 },
             },
         })
+
     </script>
 
 

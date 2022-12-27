@@ -1,0 +1,78 @@
+.colleague {
+    &_link {
+        padding: 0 20px;
+        margin-top: 46px;
+        margin-bottom: 450px;
+        a {
+            display: block;
+            // width: fit-content;
+            margin: 0 auto 30px;
+            border-radius: 100px;
+            padding: 20px 0;
+            text-align: center;
+            background-color: $fifth-color;
+            color: #fff;
+            font-size: 22px;
+            font-weight: 300;
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &_link {
+            margin-bottom: 200px;
+        }
+    }
+    &_sign {
+        padding: 0 20px;
+        margin-top: 46px;
+        margin-bottom: 450px;
+        &_item {
+            margin: 0 auto 35px;
+            max-width: 500px;
+            width: 100%;
+        }
+        &_title {
+            width: 100%;
+            background-color: $fifth-color;
+            text-align: center;
+            position: relative;
+            padding: 15px 0;
+            cursor: pointer;
+            span {
+                font-size: 24px;
+                font-weight: 300;
+                color: #fff;
+            }
+            img {
+                width: 18px;
+                position: absolute;
+                top: 50%;
+                right: 32px;
+                transform: translateY(-50%);
+            }
+        }
+        &_list {
+            margin-top: 18px;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #A5ABB0;
+            box-shadow: 0 0 12px rgba(0,0,0,0.3);
+            display: none;
+            li {
+                a {
+                    display: block;
+                    padding: 15px 0;
+                    font-size: 24px;
+                    font-weight: 300;
+                    text-align: center;
+                    color: #000;
+                    transition: $transition-main;
+                    &:hover {
+                        background-color: #E2E2E2;
+                    }
+                }
+            }
+        }
+    }
+}

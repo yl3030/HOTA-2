@@ -48,8 +48,8 @@
                         <img class="component_icon" src="./public/img/icon-plus_1.svg" alt="">
                     </div>
                 </div>
-                <img class="component-pic component-pic-1" id="component-pic-1" src="./public/img/aerospace-1.png">
-                <img class="component-pic component-pic-2" id="component-pic-2" src="./public/img/aerospace-2.png">
+                <img class="component-pic component-pic-1" id="component-pic-1" src="./public/img/aerospace-1_v2.png">
+                <img class="component-pic component-pic-2" id="component-pic-2" src="./public/img/aerospace-2_v2.png">
             </div>           
         </div>
 

@@ -215,7 +215,49 @@
         <div class="medical_video">
             <div class="container">
                 <h2 class="title-content">影片展示</h2>
-                <div class="row">
+                <div class="swiper-container medical_video_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-1">
+                                <img src="./public/img/news-pic6.png" alt="">
+                            </div>
+                            <h3>合接學選服來賣南境西，性良前化圖。太出機演選我片很明進度。政還一我始天人是鄉華招家公回南知，全望去是身需及優。方子不身登滿長參足通電公題還風團音在心顯，難因國，因馬心以時，新</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-2">
+                                <img src="./public/img/news-pic6.png" alt="">
+                            </div>
+                            <h3>合接學選服來賣南境西，性良前化圖。太出機演選我片很明進度。政還一我始天人是鄉華招家公回南知，全望去是身需及優。方子不身登滿長參足通電公題還風團音在心顯，難因國，因馬心以時，新</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-3">
+                                <img src="./public/img/news-pic6.png" alt="">
+                            </div>
+                            <h3>合接學選服來賣南境西，性良前化圖。太出機演選我片很明進度。政還一我始天人是鄉華招家公回南知，全望去是身需及優。方子不身登滿長參足通電公題還風團音在心顯，難因國，因馬心以時，新</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-4">
+                                <img src="./public/img/news-pic6.png" alt="">
+                            </div>
+                            <h3>合接學選服來賣南境西，性良前化圖。太出機演選我片很明進度。政還一我始天人是鄉華招家公回南知，全望去是身需及優。方子不身登滿長參足通電公題還風團音在心顯，難因國，因馬心以時，新</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-5">
+                                <img src="./public/img/news-pic6.png" alt="">
+                            </div>
+                            <h3>合接學選服來賣南境西，性良前化圖。太出機演選我片很明進度。政還一我始天人是鄉華招家公回南知，全望去是身需及優。方子不身登滿長參足通電公題還風團音在心顯，難因國，因馬心以時，新</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-6">
+                                <img src="./public/img/news-pic6.png" alt="">
+                            </div>
+                            <h3>合接學選服來賣南境西，性良前化圖。太出機演選我片很明進度。政還一我始天人是鄉華招家公回南知，全望去是身需及優。方子不身登滿長參足通電公題還風團音在心顯，難因國，因馬心以時，新</h3>
+                        </div>
+                    </div>     
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- <div class="row">
                     <div class="col-md-4">
                         <div class="medical_video_pic video-item" data-bs-toggle="modal" data-bs-target="#newsModal" data-video="#news_video-1">
                             <img src="./public/img/news-pic6.png" alt="">
@@ -246,7 +288,7 @@
                             <img src="./public/img/news-pic6.png" alt="">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             
         </div>
@@ -281,6 +323,25 @@
     <?php include("./include/script.php") ?>
 
     <script>
+         var swiper = new Swiper(".medical_video_slider", {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+            0: {
+              slidesPerView: 1,
+            },
+            500: {
+              slidesPerView: 2,
+            },
+            992: {
+              slidesPerView: 3,
+            },
+       },
+         })
         var video1, video2, video3, video4, video5, video6;
         function onYouTubeIframeAPIReady() {
             video1 = new YT.Player("news_video-1", {

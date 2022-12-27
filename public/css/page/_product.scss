@@ -855,7 +855,7 @@
             width: 100%;
             padding-bottom: 62%;
             position: relative;
-            margin-bottom: 65px;
+            // margin-bottom: 65px;
             cursor: pointer;
             img {
                 position: absolute;
@@ -872,6 +872,21 @@
             >div {
                 padding-left: 20px;
                 padding-right: 20px;
+            }
+        }
+        &_slider {
+            .swiper-button-next, .swiper-button-prev {
+                color: $main-color;
+            }
+            h3 {
+                font-size: 22px;
+                margin: 0;
+                margin-top: 10px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                color: $color-text;
             }
         }
     }
@@ -1083,7 +1098,7 @@
         }
         &_video {
             &_pic {
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
             }
         }
     }

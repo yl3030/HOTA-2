@@ -37,7 +37,14 @@
                         <img class="component_icon" src="./public/img/icon-plus_1.svg" alt="">
                     </div>
                 </div>
+                <div class="component component-2" data-target="#component-pic-2">
+                    <div class="component_inner">
+                        <img class="component_icon_dash" src="./public/img/icon-dashCircle.svg" alt="">
+                        <img class="component_icon" src="./public/img/icon-plus_1.svg" alt="">
+                    </div>
+                </div>
                 <img class="component-pic component-pic-1" id="component-pic-1" src="./public/img/agricultural-1.png">
+                <img class="component-pic component-pic-2" id="component-pic-2" src="./public/img/agricultural-2.png">
             </div>           
         </div>
 

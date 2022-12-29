@@ -54,10 +54,17 @@
                         <img class="component_icon" src="./public/img/icon-plus_1.svg" alt="">
                     </div>
                 </div>
+                <div class="component component-5" data-target="#component-pic-5">
+                    <div class="component_inner">
+                        <img class="component_icon_dash" src="./public/img/icon-dashCircle.svg" alt="">
+                        <img class="component_icon" src="./public/img/icon-plus_1.svg" alt="">
+                    </div>
+                </div>
                 <img class="component-pic component-pic-1" id="component-pic-1" src="./public/img/fuelCar-1.png">
                 <img class="component-pic component-pic-2" id="component-pic-2" src="./public/img/fuelCar-2.png">
                 <img class="component-pic component-pic-3" id="component-pic-3" src="./public/img/fuelCar-3.png">
                 <img class="component-pic component-pic-4" id="component-pic-4" src="./public/img/fuelCar-4.png">
+                <img class="component-pic component-pic-5" id="component-pic-5" src="./public/img/fuelCar-5.png">
             </div>           
         </div>
 

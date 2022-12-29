@@ -32,7 +32,14 @@
             </div>
             <div class="d-flex align-items-center flex-wrap supplier-form_item">
                 <label for="">密碼</label>
-                <input type="text">
+                <div class="supplier-form_password">
+                    <input type="password">
+                    <div class="supplier-form_icon">
+                        <img class="icon_view" src="./public/img/view.svg" alt="">
+                        <img class="icon_close" src="./public/img/eye-close.png" alt="">
+                    </div>
+                </div>
+                
             </div>
             <button>登入</button>
         </form>
@@ -54,6 +61,18 @@
     <?php include("./include/footer.php") ?>
     <?php include("./include/script.php") ?>
 
+    <script>
+        $(".supplier-form_icon").click(function(){
+            if($(this).hasClass("see")) {
+                $(this).parents(".supplier-form_password").find("input").attr("type","password");
+                $(this).removeClass("see");
+            }else {
+                $(this).parents(".supplier-form_password").find("input").attr("type","text");
+                $(this).addClass("see");
+            }
+            
+        })
+    </script>
 
 </body>
 </html>

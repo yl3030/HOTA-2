@@ -69,6 +69,9 @@ $(".component").mouseover(function(){
             $(".component-2").addClass("active");
             $(".component-3").addClass("active");
         }
+    }else if($(this).parents(".product-box").hasClass("agricultural")){
+        $(".component").addClass("active");
+        $(".component-pic").addClass("active");
     }
 })
 $(".component").mouseleave(function(){
@@ -89,6 +92,9 @@ $(".component").mouseleave(function(){
             $(".component-2").removeClass("active");
             $(".component-3").removeClass("active");
         }
+    }else if($(this).parents(".product-box").hasClass("agricultural")){
+        $(".component").removeClass("active");
+        $(".component-pic").removeClass("active");
     }
 })
 

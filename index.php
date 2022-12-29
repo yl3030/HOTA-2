@@ -77,20 +77,6 @@
                           </div>
                       </div>
                   </div>
-                  <!-- 影片 -->
-                  <!-- <div class="swiper-slide">
-                      <video autoplay loop muted playsinline src="./public/img/videoplayback.mp4"></video>
-                      <div class="banner_text color-white">
-                          <div class="container">
-                            <h2>精密關鍵零組件<br>傳動系統領導品牌</h2>
-                            <a class="btn-more" href="fuel-car.php">
-                                <span>了解更多</span>
-                                <img class="normal" src="./public/img/icon_arrow-more-white.svg" alt="">
-                                <img class="hover" src="./public/img/icon_arrow-more.svg" alt="">
-                            </a>
-                          </div>
-                      </div>
-                  </div> -->
                 </div>     
                 <div class="swiper-pagination"></div>      
                 <div class="swiper-button-next"></div>
@@ -209,7 +195,6 @@
             </div>
         </div>
         <div class="count">
-            <!-- <img class="count_hand d-lg-block d-none" src="./public/img/hand.png" alt=""> -->
             <img class="count_hand" src="./public/img/hand2.png" alt="">
             <div class="d-flex flex-wrap count_content">
                 <div class="count_item">
@@ -247,8 +232,8 @@
                 <div class="map_pic_inner">
                     <img data-aos="fade-up" data-aos-duration="1000" src="./public/img/map.svg" alt="">
                     <img class="map_pic_shadow" src="./public/img/map-shadow.png" alt="">
-                    <img class="d-sm-block d-none" src="./public/img/map-pin.svg" alt="">
-                    <img class="d-sm-none d-block" src="./public/img/map-pin-v2.svg" alt="">
+                    <img class="d-sm-block d-none pin" src="./public/img/map-pin.png" alt="">
+                    <img class="d-sm-none d-block pin" src="./public/img/map-pin-v2.png" alt="">
                 </div>
             </div>
             <a href="place.php" class="btn-more btn-more-point mx-auto">

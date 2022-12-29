@@ -319,6 +319,20 @@
                 }
             }
         }
+        &-5 {
+            top: 35vw;
+            left: 34.5vw;
+            .component_inner {
+                &::after {
+                    height: 9.3vw;
+                }
+                // &::after {
+                //     height: 2vw;
+                //     bottom: calc(100% + 2vw);
+                //     left: -7.6vw;
+                // }
+            }
+        }
         &-pic {
             &-1 {
                 width: 41.67vw;
@@ -339,6 +353,11 @@
                 width: 20.83vw;
                 top: 6.83vw;
                 left: 39.58vw;
+            }
+            &-5 {
+                width: 33.28vw;
+                top: 7.83vw;
+                left: 20.58vw;
             }
         }
     }
@@ -507,11 +526,35 @@
                 }
             }
         }
+        &-2 {
+            top: 36.5vw;
+            left: 57.69vw;
+            .component_inner {
+                &::before {
+                    height: 2px;
+                    width: 33.5vw;
+                    top: calc(2.5vw / 2);
+                    right: 1.6vw;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    left: inherit;
+                    height: 10.8vw;
+                    right: calc(33.5vw + 1.6vw);
+                    bottom: calc((2.5vw / 2) - 1.1px);
+                }
+            }
+        }
         &-pic {
             &-1 {
                 width: 20.83vw;
                 top: 8.87vw;
                 left: 69.18vw;
+            }
+            &-2 {
+                width: 34.53vw;
+                top: 8.87vw;
+                left: 14.18vw;
             }
         }
     }
@@ -1259,6 +1302,10 @@
                     }
                 }
             }
+            &-5 {
+                top: 46vw;
+                left: 19.5vw;
+            }
             &-pic {
                 &-1 {
                     width: 70vw;
@@ -1279,6 +1326,11 @@
                     width: 40vw;
                     top: 6.83vw;
                     left: 19.58vw;
+                }
+                &-5 {
+                    width: 40vw;
+                    top: 15.5vw;
+                    left: 7.58vw;
                 }
             }
         }
@@ -1403,10 +1455,30 @@
                     }
                 }
             }
+            &-2 {
+                top: 42.12vw;
+                left: 60.69vw;
+                .component_inner {
+                    &::before {
+                        display: none;
+                    }
+                    &::after {
+                        height: 8.8vw;
+                        left: calc(6.25vw / 2);
+                        top: calc(100% - 2px);
+                        bottom: inherit;
+                    }
+                }
+            }
             &-pic {
                 &-1 {
                     width: 40vw;
                     top: 6.87vw;
+                    left: 10vw;
+                }
+                &-2 {
+                    width: 70vw;
+                    top: 56.87vw;
                     left: 10vw;
                 }
             }

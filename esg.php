@@ -228,58 +228,13 @@
                 <h2 class="title-page">永續長程目標</h2>
                 <div class="position-relative">
                     <div class="swiper-container esg_target_slider">   
-                        <div class="swiper-pagination"></div>
+                        <ul class="esg_target_tab row">
+                            <li class="col-4"><button class="esg_target_tab_btn esg_target_tab_envi active">環境</button></li>
+                            <li class="col-4"><button class="esg_target_tab_btn esg_target_tab_soci">社會</button></li>
+                            <li class="col-4"><button class="esg_target_tab_btn esg_target_tab_mana">公司治理</button></li>
+                        </ul>
                         <div class="swiper-wrapper">
-
-                            <!-- <div class="swiper-slide">
-                                <div class="d-flex flex-wrap esg_target_bg mena">
-                                    <div class="esg_target_left">
-                                        <div class="inner">
-                                            <div class="esg_target_text">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="esg_target_right d-flex flex-wrap">
-                                        <div class="inner">
-                                            <div class="esg_target_text">
-                                                <h4>0件</h4>
-                                                <p>
-                                                    重大違法事項
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="inner">
-                                            <div class="esg_target_text">
-                                                <h4>1:1</h4>
-                                                <p>
-                                                    相同職位男女同仁基本薪酬比
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="inner">
-                                            <div class="esg_target_text">
-                                                <h4><span id="menaNum-1">100</span>%</h4>
-                                                <p>
-                                                    供應鏈道德規範暨法遵教育<br>
-                                                    （含營業秘密保護）<br>
-                                                    宣導達成率
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="inner">
-                                            <div class="esg_target_text">
-                                                <h4>≥<span id="menaNum-2">100</span>億</h4>
-                                                <p>
-                                                    2026年合併營收<br>
-                                                    2021年較2020年成長22.06%
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="swiper-slide">
+                            <div class="swiper-slide slide-envi">
                                 <div class="d-flex flex-wrap esg_target_bg envi">
                                     <div class="esg_target_left">
                                         <div class="inner">
@@ -327,7 +282,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide slide-soci">
                                 <div class="d-flex flex-wrap esg_target_bg soci">
                                     <div class="esg_target_left">
                                         <div class="inner">
@@ -373,7 +328,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide slide-mana">
                                 <div class="d-flex flex-wrap esg_target_bg mena">
                                     <div class="esg_target_left">
                                         <div class="inner">
@@ -788,10 +743,8 @@
     <script>
         $(".esg_round_text_title").click(function(){
             let round = $(this).data("round");
-            // $(this).parents(".esg_round_text_inner").find("ul").slideDown(300);
             $(this).parents(".esg_round_text_item").addClass("active");
             $(this).parents(".esg_round_text_item").siblings(".esg_round_text_item").removeClass("active");
-            // $(this).parents(".esg_round_text_item").siblings(".esg_round_text_item").find("ul").slideUp(300);
             $(round).addClass("active");
             $(round).siblings(".esg_round_item").removeClass("active");
         })
@@ -799,7 +752,6 @@
             var roundTitle = $(".esg_round_inner");
             if (!roundTitle.is(event.target) && roundTitle.has(event.target).length === 0) {
                 $(".esg_round_text_inner").each(function(){
-                    // $(this).find("ul").slideUp(300);
                     $(".esg_round_text_item").removeClass("active");
                     $(".esg_round_item").removeClass("active");
                 })
@@ -821,40 +773,41 @@
             smartEasingAmount:10,
         }
         var m_1={
-            startVal: 90,
             smartEasingAmount:10,
         }
         var m_2={
-            startVal: 90,
             smartEasingAmount:10,
         }
         var soci_3={
             startVal: 800,
             smartEasingAmount:860,
         }
+        function count(){
+            var numAnimM1 = new countUp.CountUp('menaNum-1', 100,m_1);
+            numAnimM1.start();
+            var numAnimM2 = new countUp.CountUp('menaNum-2', 100,m_2);
+            numAnimM2.start();
+            var numAnimEnvi1 = new countUp.CountUp('enviNum-1', 30,envi_1);
+            numAnimEnvi1.start();
+            var numAnimEnvi2 = new countUp.CountUp('enviNum-2', 60,envi_2);
+            numAnimEnvi2.start();
+            var numAnimEnvi3 = new countUp.CountUp('enviNum-3', 30,envi_3);
+            numAnimEnvi3.start();
+            var numAnimSoci1 = new countUp.CountUp('sociNum-1', 8,soci_1);
+            numAnimSoci1.start();
+            var numAnimSoci2 = new countUp.CountUp('sociNum-2', 20,soci_2);
+            numAnimSoci2.start();
+            var numAnimSoci3 = new countUp.CountUp('sociNum-3', 858,soci_3);
+            numAnimSoci3.start();
+        };
         new Waypoint({
             element: document.querySelector(".esg_target_slider"),
             handler: function () {
-                var numAnimM1 = new countUp.CountUp('menaNum-1', 100,m_1);
-                numAnimM1.start();
-                var numAnimM2 = new countUp.CountUp('menaNum-2', 100,m_2);
-                numAnimM2.start();
-                var numAnimEnvi1 = new countUp.CountUp('enviNum-1', 30,envi_1);
-                numAnimEnvi1.start();
-                var numAnimEnvi2 = new countUp.CountUp('enviNum-2', 60,envi_2);
-                numAnimEnvi2.start();
-                var numAnimEnvi3 = new countUp.CountUp('enviNum-3', 30,envi_3);
-                numAnimEnvi3.start();
-                var numAnimSoci1 = new countUp.CountUp('sociNum-1', 8,soci_1);
-                numAnimSoci1.start();
-                var numAnimSoci2 = new countUp.CountUp('sociNum-2', 20,soci_2);
-                numAnimSoci2.start();
-                var numAnimSoci3 = new countUp.CountUp('sociNum-3', 858,soci_3);
-                numAnimSoci3.start();
+                count();
             },
             offset: '40%',
         });
-        var swiper = new Swiper(".esg_target_slider", {
+        var swiperTarget = new Swiper(".esg_target_slider", {
             slidesPerView: 1,
             navigation: {
                 nextEl: ".esg_target_next",
@@ -862,24 +815,40 @@
             },
             observeParents:true,
             observer:true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                    let title;
-                    if(index == 0) {
-                        title = "環境";
-                    }else if (index == 1) {
-                        title = "社會";
-                    }else if (index == 2) {
-                        title = "公司治理";
-                    }
-                    return '<div class="' + className + '"><span>' + title + "</span></div>";
-                },
-            },
-            loop: true,
+            observeSlideChildren:true,
             speed: 800,
+            on: {
+                slideChange: function(){
+                    count();
+                },
+                slideChangeTransitionEnd: function(){
+                    let slideActive = $(".swiper-slide-active");
+                    let tabTarget;
+                    if( slideActive.hasClass("slide-envi")) {
+                        tabTarget = $(".esg_target_tab_envi");
+                    }else if( slideActive.hasClass("slide-soci")) {
+                        tabTarget = $(".esg_target_tab_soci");
+                    }else if( slideActive.hasClass("slide-mana")) {
+                        tabTarget = $(".esg_target_tab_mana");
+                    } 
+                    tabTarget.addClass("active");
+                    tabTarget.parents("li").siblings("li").find(".esg_target_tab_btn").removeClass("active");
+                }
+            }
         });
+        $(".esg_target_tab_btn").click(function(){
+            let index;
+            $(this).addClass("active");
+            $(this).parents("li").siblings("li").find(".esg_target_tab_btn").removeClass("active");
+            if($(this).hasClass("esg_target_tab_envi")) {
+                index = $(".swiper-slide.slide-envi").index();
+            }else if($(this).hasClass("esg_target_tab_soci")) {
+                index = $(".swiper-slide.slide-soci").index();
+            }else if($(this).hasClass("esg_target_tab_mana")) {
+                index = $(".swiper-slide.slide-mana").index();
+            }
+            swiperTarget.slideTo(index, 1000, true);
+        })
         var swiper = new Swiper(".esg_prize_slider", {
             slidesPerView: 1,
             spaceBetween: 0,

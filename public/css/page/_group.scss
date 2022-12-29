@@ -43,7 +43,6 @@
     background-repeat: no-repeat;
     &_slider {
         padding-left: 100px;
-        // padding-right: 30px;
         position: relative;
         &::before {
             position: absolute;
@@ -214,12 +213,6 @@
             }
         }
     }
-    // &_list {
-    //     display: none;
-    //     &.active {
-    //         display: block;
-    //     }
-    // }
 }
 
 .vision {
@@ -360,7 +353,6 @@
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
         display: flex;
         flex-wrap: wrap;
-        // align-items: center;
         &:last-child {
             margin-bottom: 0;
         }
@@ -405,7 +397,6 @@
                 }
             }
             ul {
-                // margin-bottom: 70px;
                 li {
                     padding-left: 20px;
                     position: relative;
@@ -547,14 +538,6 @@
             color: $color-text;
             letter-spacing: 0.15em;
         }
-        // input {
-        //     border: 1px solid $main-deep;
-        //     height: 50px;
-        //     padding: 10px 15px;
-        //     &::placeholder {
-        //         color: #A6ACB1;
-        //     }
-        // }
         button {
             width: 100%;
             height: 50px;
@@ -593,8 +576,43 @@
             left: 120%;
             bottom: -25%;
         }
-        &.form-login
-         {
+        &_password {
+            width: calc(100% - 60px);
+            border: 1px solid #6D6D6D;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            input {
+                width: calc(100% - 60px) !important;
+                border: 0;
+                height: 100%;
+            }
+        }
+        &_icon {
+            width: 60px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            img {
+                width: 20px;
+                &.icon_close {
+                    display: none;
+                }
+            }
+            &.see {
+                img {
+                    &.icon_view {
+                        display: none;
+                    }
+                    &.icon_close {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.form-login{
             max-width: 440px;
             padding: 0 20px;
             position: relative;
@@ -742,9 +760,7 @@
     }
     &_signin {
         &_tab {
-            // width: 400px;
             width: 31%;
-            // padding-left: 150px;
             padding-left: calc((100vw - 1320px) / 2 + 50px);
             background-color: #F8F8F8;
             padding-top: 95px;
@@ -781,9 +797,7 @@
             }
         }
         &_content {
-            // width: calc(100% - 400px);
             width: 69%;
-            // padding-right: 150px;
             padding-right: calc((100vw - 1320px) / 2 + 42px);
             padding-left: 65px;
             padding-bottom: 140px;
@@ -806,8 +820,6 @@
                 width: 88%;
                 input {
                     width: calc(70% - 15px);
-                    // height: 50px;
-                    // border: 1px solid $main-deep;
                 }
                 button {
                     width: 30%;
@@ -1448,25 +1460,6 @@
         }
     }
 }
-
-// @media screen and (min-width:767px) {
-//     .compete {
-//         &_content {
-//             &_item {
-//                 padding-left: calc((100vw - 720px) / 2);
-//                 .compete_content_item_text {
-//                     padding-right: calc((100vw - 720px) / 2);
-//                 }
-//                 &:nth-child(even) {
-//                     padding-right: calc((100vw - 720px) / 2);
-//                     .compete_content_item_text {
-//                         padding-left: calc((100vw - 720px) / 2);
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 
 @media screen and (min-width:992px) {
     .compete {

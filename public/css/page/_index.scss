@@ -120,7 +120,6 @@
     position: relative;
     padding-bottom: 66.67%;
     background-color: #EFEFEE;
-    // background-image: url(../../public/img/intro-homepic.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -142,14 +141,12 @@
             margin-right: 5%;
             h2 {
                 color: $main-color;
-                // font-size: calc(1.5rem + 0.9vw);
                 font-size: 2.5rem;
                 margin: 0 0 10px;
             }
             p {
                 line-height: 2;
                 margin-bottom: 30px;
-                // font-size: 22px;
                 font-size: 20px;
                 font-weight: 300;
             }
@@ -259,17 +256,6 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        &.product {
-            // &_system {
-            //     background-image: url(../public/img/car-pic.png);
-            // }
-            // &_machine {
-            //     background-image: url(../public/img/machine-pic.png);
-            // }
-            // &_medical {
-            //     background-image: url(../public/img/medical-pic.png);
-            // }
-        }
         &:nth-child(odd) {
             .product_text {
                 right: 5%;
@@ -311,7 +297,6 @@
         }
         p {
             color: #fff;
-            // text-shadow: 0 0 3px rgba(0,0,0,0.9);
             text-shadow: 0 1px 8px rgba(0,0,0,0.9);
             width: 100%;
             line-height: 1.7;
@@ -337,7 +322,6 @@
                 position: absolute;
                 top: calc(100% + 30px);
                 left: 0;
-                // opacity: 0;
                 transition: $transition-main;
                 span {
                     color: #fff;
@@ -374,7 +358,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5vw 20px;
-    // overflow: hidden;
     &_hand {
         width: 32vw;
         position: absolute;
@@ -468,10 +451,14 @@
                 object-fit: contain;
                 top: 0;
                 left: 0;
+                &.pin {
+                    transform: scale(1.04) translateY(1%);
+                }
             }
         }
         &_shadow {
             mix-blend-mode: multiply;
+            transform: scale(1.04) translateY(1%);
         }
     }
     .btn-more {

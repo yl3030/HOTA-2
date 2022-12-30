@@ -58,28 +58,28 @@
                         </div>
                         <div class="esg_round_icon">
                             <div class="esg_round_icon_img" style="--i:2">
-                                <img style="--i:-2" src="./public/img/round_icon-1.svg" alt="">
+                                <img style="--i:-2" src="./public/img/round_icon-1-v2.svg" alt="">
                             </div>
                             <div class="esg_round_icon_img" style="--i:3">
-                                <img style="--i:-3" src="./public/img/round_icon-2.svg" alt="">
+                                <img style="--i:-3" src="./public/img/round_icon-2-v2.svg" alt="">
                             </div>
                             <div class="esg_round_icon_img" style="--i:4">
-                                <img style="--i:-4" src="./public/img/round_icon-3.svg" alt="">
+                                <img style="--i:-4" src="./public/img/round_icon-3-v2.svg" alt="">
                             </div>
                             <div class="esg_round_icon_img" style="--i:5">
-                                <img style="--i:-5" src="./public/img/round_icon-4.svg" alt="">
+                                <img style="--i:-5" src="./public/img/round_icon-4-v2.svg" alt="">
                             </div>
                             <div class="esg_round_icon_img" style="--i:6">
-                                <img style="--i:-6" src="./public/img/round_icon-5.svg" alt="">
+                                <img style="--i:-6" src="./public/img/round_icon-5-v2.svg" alt="">
                             </div>
                             <div class="esg_round_icon_img" style="--i:7">
-                                <img style="--i:-7" src="./public/img/round_icon-6.svg" alt="">
+                                <img style="--i:-7" src="./public/img/round_icon-6-v2.svg" alt="">
                             </div>
                             <div class="esg_round_icon_img" style="--i:8">
-                                <img style="--i:-8" src="./public/img/round_icon-7.svg" alt="">
+                                <img style="--i:-8" src="./public/img/round_icon-7-v2.svg" alt="">
                             </div>
                             <div class="esg_round_icon_img" style="--i:1">
-                                <img style="--i:-1" src="./public/img/round_icon-8.svg" alt="">
+                                <img style="--i:-1" src="./public/img/round_icon-8-v2.svg" alt="">
                             </div>
                             
                         </div>
@@ -234,6 +234,54 @@
                             <li class="col-4"><button class="esg_target_tab_btn esg_target_tab_mana">公司治理</button></li>
                         </ul>
                         <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-envi">
+                                <div class="d-flex flex-wrap esg_target_bg envi">
+                                    <div class="esg_target_left">
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4>▲ <span id="enviNum-1">30</span>％</h4>
+                                                <p>
+                                                水資源使用率<span class="highlight">提升30%</span><br>
+                                                降低耗用自來水量<br>
+                                                規劃水資源回用
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="esg_target_right d-flex flex-wrap">
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4>≥ <span id="enviNum-2">60</span>％</h4>
+                                                <p>
+                                                廢棄物資源回用比例
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4>0件</h4>
+                                                <p>
+                                                重大環境污染事故
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4><span id="enviNum-3">30</span>噸</h4>
+                                                <p>
+                                                資源循環量
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="esg_target_text">
+                                                <h4>> 1.1％</h4>
+                                                <p>累計平均年節電率</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="swiper-slide slide-envi">
                                 <div class="d-flex flex-wrap esg_target_bg envi">
                                     <div class="esg_target_left">

@@ -1,10 +1,3 @@
-// import { CountUp } from './js/countup/countUp.min.js';
-
-// window.onload = function() {
-//     var countUp = new CountUp('num1', 2000);
-//     countUp.start();
-// }
-
 AOS.init();
 
 $(".header_nav_icon_inner").click(function(){
@@ -28,7 +21,6 @@ $(document).click(function(event){
 })
 
 $(".header-menu").click(function(){
-    // console.log("!!!");
     $(".header_nav-m").toggleClass("active");
 })
 
@@ -106,7 +98,6 @@ $(".product-componentList_item").click(function(){
     
     let source = $(this).parents(".tab-pane").data("id");
     $("#componentModal").data("source",source);
-    // console.log(source);
 
     let picName = $(this).find(".product-componentList_name").text();
     $(".componentModal_name").text(picName);
@@ -177,4 +168,11 @@ $(".place_map_pin").click(function(){
         $(pin).slideDown(300);
         $(pin).siblings(".place_map_list").slideUp(300);
     }
+})
+
+// nav
+$(".header_nav_text").mouseover(function(){
+    $(".iconDrop").each(function(){
+        $(this).hide();
+    })
 })
